@@ -20,6 +20,8 @@ import {
 	nodejs,
 	reactjs,
 	redux,
+	cloudnonic,
+	vrband,
 	teleperformance,
 	endava,
 	tailwind,
@@ -124,6 +126,24 @@ const technologies = [
 
 const experiences = [
 	{
+		title: "Full Stack Developer",
+		company_name: "Cloudnonic",
+		icon: cloudnonic,
+		iconBg: "#383E56",
+		date: "December 2023 - Current",
+		points: ["I develop scalable web applications using React, Next.js, TypeScript, and TailwindCSS for healthcare, education, and government sectors in Germany. I specialize in pixel-perfect responsive interfaces and complex animations, currently leading frontend development for a comprehensive healthcare management platform that streamlines patient-doctor interactions and multi-provider service selection.", "Successfully delivered three major projects including government subsidy management systems and scholarship platforms. I collaborate in a Scrum team using AI-first methodologies, also contributing to backend development with NestJS, PostgreSQL, and Prisma while being recognized as the creative lead for UX/UI implementation and animation development."],
+	},
+	{
+		title: "Full Stack Developer",
+		company_name: "VrBand",
+		icon: vrband,
+		iconBg: "#383E56",
+		date: "March 2023 - November 2024",
+		points: [
+			"As a Full Stack Developer at VR_BAND, I develop and maintain business software solutions, including a marketing analytics dashboard and an enterprise resource planning (ERP) system.  Using Vue.js, Laravel, and JavaScript. My responsibilities include implementing RESTful APIs, MySQL databases, and user authentication systems. I craft responsive interfaces with HTML5, CSS3, and SASS, while enhancing accessibility and internationalization. Working both independently and collaboratively in an English-speaking environment.",
+			"I delivered scalable, high-quality solutions that streamline business operations and provide actionable insights to our clients."],
+	},
+	{
 		title: "Developer Intern",
 		company_name: "Endava",
 		icon: endava,
@@ -157,11 +177,11 @@ const experiences = [
 		iconBg: "#383E56",
 		date: "September 2022 - December 2023",
 		points: [
-			"Developed multitasking skills by efficiently managing multiple tasks concurrently to address customer inquiries and concerns.",
-			"Utilized effective interrogation strategies to identify and understand customer situations, ensuring personalized support.",
-			"Leveraged tools and systems to identify and implement appropriate solutions to customer issues.",
-			"Demonstrated independence and problem-solving skills by autonomously resolving customer problems.",
-			"Prioritized quick and effective actions to deliver high-quality solutions and maintain excellent customer service.",
+			// "Developed multitasking skills by efficiently managing multiple tasks concurrently to address customer inquiries and concerns.",
+			// "Utilized effective interrogation strategies to identify and understand customer situations, ensuring personalized support.",
+			// "Leveraged tools and systems to identify and implement appropriate solutions to customer issues.",
+			// "Demonstrated independence and problem-solving skills by autonomously resolving customer problems.",
+			// "Prioritized quick and effective actions to deliver high-quality solutions and maintain excellent customer service.",
 		],
 	},
 ]

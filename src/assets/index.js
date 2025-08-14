@@ -21,9 +21,11 @@ import tailwind from "./tech/tailwind.png"
 import typescript from "./tech/typescript.png"
 import threejs from "./tech/threejs.svg"
 
-import teleperformance from "./company/tp.png"
-import endava from "./company/endava.png"
-import blancLabs from "./company/blancLabs.png"
+import cloudnonic from "./company/cloudnonic.jpeg"
+import vrband from "./company/vrband.jpeg"
+import teleperformance from "./company/tp.jpeg"
+import endava from "./company/endava.jpeg"
+import blancLabs from "./company/blanclabs.jpeg"
 
 import hoobank from "./screenshots/juanes-bank.png"
 import artGallery from "./screenshots/fem-art-gallery-website.png"
@@ -56,6 +58,8 @@ export {
 	tailwind,
 	typescript,
 	threejs,
+	cloudnonic,
+	vrband,
 	teleperformance,
 	endava,
 	blancLabs,
