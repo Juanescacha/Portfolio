@@ -27,6 +27,7 @@ export const experiences: Experience[] = [
 	{
 		company: "Cloudnonic",
 		position: "Full Stack Developer",
+		country: "Canada",
 		description: "placeholder",
 		start: {
 			month: "DEC",
@@ -41,6 +42,7 @@ export const experiences: Experience[] = [
 	{
 		company: "vr_BAND",
 		position: "Full Stack Developer",
+		country: "Czech Republic",
 		description: "placeholder",
 		start: {
 			month: "FEB",
@@ -55,6 +57,7 @@ export const experiences: Experience[] = [
 	{
 		company: "Endava",
 		position: "Front End Developer Intern",
+		country: "Colombia",
 		description: "placeholder",
 		start: {
 			month: "JUL",
@@ -69,6 +72,7 @@ export const experiences: Experience[] = [
 	{
 		company: "Teleperformance",
 		position: "Customer Service Associate",
+		country: "Colombia",
 		description: "placeholder",
 		start: {
 			month: "JUL",

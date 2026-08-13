@@ -10,6 +10,7 @@ export type Socials = Record<sites, string>
 export interface Experience {
 	company: string
 	position: string
+	country: string
 	description: string
 	start: {
 		month: string
