@@ -13,20 +13,45 @@ export interface Experience {
 	description: string
 	start: {
 		month: string
-		year: string
+		year: number
 	}
 	end?: {
 		month: string
-		year: string
+		year: number
 	}
 	url: string
 }
 
+export type Technologies =
+	| "React"
+	| "Next.js"
+	| "NestJs"
+	| "TypeScript"
+	| "JavaScript"
+	| "Vue"
+	| "Node"
+	| "Tailwindcss"
+	| "Vitest"
+	| "Pinia"
+	| "Sass"
+	| "Three.js"
+	| "Motion"
+
 export interface Project {
 	name: string
 	description: string
-	tags: string[]
+	tags: Technologies[]
 	year: number
 	deployLink?: string
 	imgSrc: string
+}
+
+export interface Certificate {
+	name: string
+	issuer: string
+	date: {
+		month: string
+		year: number
+	}
+	url: string
 }

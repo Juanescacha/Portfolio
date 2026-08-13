@@ -1,6 +1,12 @@
-import type { Experience, Profile, Project, Socials } from "./types"
+import type {
+	Certificate,
+	Experience,
+	Profile,
+	Project,
+	Socials,
+} from "./types"
 
-export type { Experience, Profile, Project, Socials }
+export type { Certificate, Experience, Profile, Project, Socials }
 
 export const profile: Profile = {
 	name: "Juan Esteban Camargo",
@@ -19,28 +25,116 @@ export const socials: Socials = {
 
 export const experiences: Experience[] = [
 	{
-		company: "Company 1",
-		position: "Position 1",
-		description: "A simple experience",
+		company: "Cloudnonic",
+		position: "Full Stack Developer",
+		description: "placeholder",
 		start: {
-			month: "JAN",
-			year: "2020",
+			month: "DEC",
+			year: 2024,
 		},
 		end: {
-			month: "DEC",
-			year: "2021",
+			month: "FEB",
+			year: 2026,
 		},
-		url: "",
+		url: "https://www.cloudnonic.com/",
+	},
+	{
+		company: "vr_BAND",
+		position: "Full Stack Developer",
+		description: "placeholder",
+		start: {
+			month: "FEB",
+			year: 2024,
+		},
+		end: {
+			month: "NOV",
+			year: 2024,
+		},
+		url: "https://vrband.eu/",
+	},
+	{
+		company: "Endava",
+		position: "Front End Developer Intern",
+		description: "placeholder",
+		start: {
+			month: "JUL",
+			year: 2023,
+		},
+		end: {
+			month: "JAN",
+			year: 2024,
+		},
+		url: "https://www.endava.com/",
+	},
+	{
+		company: "Teleperformance",
+		position: "Customer Service Associate",
+		description: "placeholder",
+		start: {
+			month: "JUL",
+			year: 2023,
+		},
+		end: {
+			month: "JAN",
+			year: 2024,
+		},
+		url: "https://www.tp.com/",
 	},
 ]
 
 export const projects: Project[] = [
 	{
-		name: "Project 1",
+		name: "GoMedicus Group",
 		description: "A simple project",
-		tags: ["TypeScript", "React"],
+		tags: ["Next.js", "TypeScript", "Motion", "Tailwindcss"],
+		year: 2025,
+		deployLink: "",
+		imgSrc: "",
+	},
+	{
+		name: "Endava Marketplace",
+		description: "A simple project",
+		tags: ["TypeScript", "Vue", "Tailwindcss", "Vitest", "Pinia", "Sass"],
 		year: 2023,
 		deployLink: "",
 		imgSrc: "",
+	},
+	{
+		name: "Portfolio V1",
+		description: "A simple project",
+		tags: ["JavaScript", "React", "Three.js", "Tailwindcss"],
+		year: 2022,
+		deployLink: "",
+		imgSrc: "",
+	},
+]
+
+export const certificates: Certificate[] = [
+	{
+		name: "Full Stack Open",
+		issuer: "University of Helsinki",
+		date: {
+			month: "March",
+			year: 2023,
+		},
+		url: "",
+	},
+	{
+		name: "Scrum Foundation Professional Certificate",
+		issuer: "CertiProf",
+		date: {
+			month: "January",
+			year: 2023,
+		},
+		url: "",
+	},
+	{
+		name: "EF Standard English Test: C2 Proficiency",
+		issuer: "EF Education First",
+		date: {
+			month: "January",
+			year: 2023,
+		},
+		url: "",
 	},
 ]
