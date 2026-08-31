@@ -43,7 +43,7 @@ export interface Project {
 	description: string
 	tags: Technologies[]
 	year: number
-	deployLink?: string
+	deployUrl?: string
 	imgSrc: string
 }
 
@@ -54,5 +54,5 @@ export interface Certificate {
 		month: string
 		year: number
 	}
-	url: string
+	imgSrc: string
 }

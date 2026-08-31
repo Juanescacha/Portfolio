@@ -92,7 +92,7 @@ export const projects: Project[] = [
 		description: "A simple project",
 		tags: ["Next.js", "TypeScript", "Motion", "Tailwindcss"],
 		year: 2025,
-		deployLink: "",
+		deployUrl: "",
 		imgSrc: "",
 	},
 	{
@@ -100,7 +100,7 @@ export const projects: Project[] = [
 		description: "A simple project",
 		tags: ["TypeScript", "Vue", "Tailwindcss", "Vitest", "Pinia", "Sass"],
 		year: 2023,
-		deployLink: "",
+		deployUrl: "",
 		imgSrc: "",
 	},
 	{
@@ -108,7 +108,7 @@ export const projects: Project[] = [
 		description: "A simple project",
 		tags: ["JavaScript", "React", "Three.js", "Tailwindcss"],
 		year: 2022,
-		deployLink: "",
+		deployUrl: "",
 		imgSrc: "",
 	},
 ]
@@ -121,7 +121,7 @@ export const certificates: Certificate[] = [
 			month: "March",
 			year: 2023,
 		},
-		url: "",
+		imgSrc: "",
 	},
 	{
 		name: "Scrum Foundation Professional Certificate",
@@ -130,7 +130,7 @@ export const certificates: Certificate[] = [
 			month: "January",
 			year: 2023,
 		},
-		url: "",
+		imgSrc: "",
 	},
 	{
 		name: "EF Standard English Test: C2 Proficiency",
@@ -139,6 +139,6 @@ export const certificates: Certificate[] = [
 			month: "January",
 			year: 2023,
 		},
-		url: "",
+		imgSrc: "",
 	},
 ]
