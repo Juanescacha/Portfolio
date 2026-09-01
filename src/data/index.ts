@@ -18,9 +18,9 @@ export const profile: Profile = {
 }
 
 export const sections = {
-	about: "About",
-	experience: "Experience",
-	projects: "Projects",
+	about: "about",
+	experience: "experience",
+	projects: "projects",
 } as const
 
 export const socials = [
@@ -130,7 +130,7 @@ export const projects: Project[] = [
 	{
 		name: "GoMedicus Group",
 		description: "A simple project",
-		tags: ["Next.js", "TypeScript", "Motion", "Tailwindcss"],
+		technologies: ["Next.js", "TypeScript", "Motion", "Tailwindcss"],
 		year: 2025,
 		deployUrl: "",
 		imgSrc: "",
@@ -138,7 +138,14 @@ export const projects: Project[] = [
 	{
 		name: "Endava Marketplace",
 		description: "A simple project",
-		tags: ["TypeScript", "Vue", "Tailwindcss", "Vitest", "Pinia", "Sass"],
+		technologies: [
+			"TypeScript",
+			"Vue",
+			"Tailwindcss",
+			"Vitest",
+			"Pinia",
+			"Sass",
+		],
 		year: 2023,
 		deployUrl: "",
 		imgSrc: "",
@@ -146,7 +153,7 @@ export const projects: Project[] = [
 	{
 		name: "Portfolio V1",
 		description: "A simple project",
-		tags: ["JavaScript", "React", "Three.js", "Tailwindcss"],
+		technologies: ["JavaScript", "React", "Three.js", "Tailwindcss"],
 		year: 2022,
 		deployUrl: "",
 		imgSrc: "",

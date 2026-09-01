@@ -46,7 +46,7 @@ export type Technologies =
 export interface Project {
 	name: string
 	description: string
-	tags: Technologies[]
+	technologies: Technologies[]
 	year: number
 	deployUrl?: string
 	imgSrc: string
