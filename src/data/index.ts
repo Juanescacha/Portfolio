@@ -23,7 +23,11 @@ export const profile: Profile = {
 	],
 }
 
-export const sections = ["About", "Experience", "Projects"]
+export const sections = {
+	about: "About",
+	experience: "Experience",
+	projects: "Projects",
+} as const
 
 export const socials: Socials = [
 	{

@@ -1,4 +1,10 @@
 ---
+import Section from "@/components/sections/Section.astro"
+import { profile, sections } from "@/data"
 ---
 
-<section id="about" aria-label="About me"></section>
+<Section id={sections.about} ariaLabel="About me" title={sections.about}>
+	{profile.about.map((paragraph) => (
+		<p class="mb-4">{paragraph}</p>
+	))}
+</Section>
