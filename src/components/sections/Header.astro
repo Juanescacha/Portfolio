@@ -1,0 +1,31 @@
+---
+import { profile, socials } from "@/data"
+---
+
+<header
+	class="lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:py-24 lg:sticky lg:top-0 lg:w-[48%]"
+>
+	<!-- profile -->
+	<div>
+		<h1 class="text-5xl font-bold tracking-tight text-slate-200">
+			<a href="/">{profile.name}</a>
+		</h1>
+		<h2 class="mt-3 text-xl font-medium tracking-tight text-slate-200">
+			{profile.role}
+		</h2>
+		<p class="mt-4 max-w-xs leading-normal">{profile.bio}</p>
+	</div>
+
+	<!-- social icons -->
+	<ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
+		{socials.map((social) => (
+				/* biome-ignore lint/correctness/useJsxKeyInIterable: not needed on astro */
+			<li class="mr-5 shrink-0 text-xs">
+				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (opens in a new tab)`} class="block">
+					<span class="sr-only">{social.title}</span>
+					{social.title}
+				</a>
+			</li>
+		))}
+	</ul>
+</header>
