@@ -2,6 +2,7 @@ export interface Profile {
 	name: string
 	role: string
 	bio: string
+	about: string[]
 }
 
 type sites = "github" | "linkedin" | "leetcode" | "gitlab"
