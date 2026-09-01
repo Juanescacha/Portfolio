@@ -5,11 +5,11 @@ export interface Profile {
 	about: string[]
 }
 
-export type Socials = {
+export type Social = {
 	title: string
 	url: string
 	icon: string
-}[]
+}
 
 export interface Experience {
 	company: string
@@ -24,6 +24,7 @@ export interface Experience {
 		month: string
 		year: number
 	}
+	technologies: Technologies[]
 	url: string
 }
 

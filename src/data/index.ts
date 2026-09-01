@@ -1,12 +1,6 @@
-import type {
-	Certificate,
-	Experience,
-	Profile,
-	Project,
-	Socials,
-} from "./types"
+import type { Certificate, Experience, Profile, Project, Social } from "./types"
 
-export type { Certificate, Experience, Profile, Project, Socials }
+export type { Certificate, Experience, Profile, Project, Social }
 
 export const profile: Profile = {
 	name: "Juan Esteban Camargo",
@@ -29,7 +23,7 @@ export const sections = {
 	projects: "Projects",
 } as const
 
-export const socials: Socials = [
+export const socials = [
 	{
 		title: "GitHub",
 		url: "https://www.github.com/juanescacha",
@@ -50,14 +44,15 @@ export const socials: Socials = [
 		url: "https://www.gitlab.com/juanescacha",
 		icon: "",
 	},
-]
+] satisfies Social[]
 
-export const experiences: Experience[] = [
+export const experiences = [
 	{
 		company: "Cloudnonic",
 		position: "Full Stack Developer",
 		country: "Canada",
-		description: "placeholder",
+		description:
+			"Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.",
 		start: {
 			month: "DEC",
 			year: 2024,
@@ -66,13 +61,15 @@ export const experiences: Experience[] = [
 			month: "FEB",
 			year: 2026,
 		},
+		technologies: ["Next.js", "TypeScript", "Tailwindcss", "Node", "NestJs"],
 		url: "https://www.cloudnonic.com/",
 	},
 	{
 		company: "vr_BAND",
 		position: "Full Stack Developer",
 		country: "Czech Republic",
-		description: "placeholder",
+		description:
+			"Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.",
 		start: {
 			month: "FEB",
 			year: 2024,
@@ -81,13 +78,15 @@ export const experiences: Experience[] = [
 			month: "NOV",
 			year: 2024,
 		},
+		technologies: ["Vue", "TypeScript", "Tailwindcss"],
 		url: "https://vrband.eu/",
 	},
 	{
 		company: "Endava",
 		position: "Front End Developer Intern",
 		country: "Colombia",
-		description: "placeholder",
+		description:
+			"Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.",
 		start: {
 			month: "JUL",
 			year: 2023,
@@ -96,13 +95,24 @@ export const experiences: Experience[] = [
 			month: "JAN",
 			year: 2024,
 		},
+		technologies: [
+			"TypeScript",
+			"React",
+			"Vue",
+			"Tailwindcss",
+			"Node",
+			"Pinia",
+			"Vitest",
+			"Sass",
+		],
 		url: "https://www.endava.com/",
 	},
 	{
 		company: "Teleperformance",
 		position: "Customer Service Associate",
 		country: "Colombia",
-		description: "placeholder",
+		description:
+			"Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.",
 		start: {
 			month: "JUL",
 			year: 2023,
@@ -111,9 +121,10 @@ export const experiences: Experience[] = [
 			month: "JAN",
 			year: 2024,
 		},
+		technologies: [],
 		url: "https://www.tp.com/",
 	},
-]
+] satisfies Experience[]
 
 export const projects: Project[] = [
 	{
