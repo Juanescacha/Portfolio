@@ -25,12 +25,28 @@ export const profile: Profile = {
 
 export const sections = ["About", "Experience", "Projects"]
 
-export const socials: Socials = {
-	github: "https://www.github.com/juanescacha",
-	linkedin: "https://www.linkedin.com/in/juanescacha/",
-	leetcode: "https://leetcode.com/u/Juanescacha/",
-	gitlab: "https://www.gitlab.com/juanescacha",
-}
+export const socials: Socials = [
+	{
+		title: "GitHub",
+		url: "https://www.github.com/juanescacha",
+		icon: "",
+	},
+	{
+		title: "LinkedIn",
+		url: "https://www.linkedin.com/in/juanescacha/",
+		icon: "",
+	},
+	{
+		title: "LeetCode",
+		url: "https://leetcode.com/u/Juanescacha/",
+		icon: "",
+	},
+	{
+		title: "GitLab",
+		url: "https://www.gitlab.com/juanescacha",
+		icon: "",
+	},
+]
 
 export const experiences: Experience[] = [
 	{

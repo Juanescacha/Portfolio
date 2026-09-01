@@ -5,8 +5,11 @@ export interface Profile {
 	about: string[]
 }
 
-type sites = "github" | "linkedin" | "leetcode" | "gitlab"
-export type Socials = Record<sites, string>
+export type Socials = {
+	title: string
+	url: string
+	icon: string
+}[]
 
 export interface Experience {
 	company: string
