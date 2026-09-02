@@ -17,3 +17,19 @@ body {
 .active .nav-text {
 	@apply text-slate-200;
 }
+
+.mouse-gradient {
+	--gradient-x: 0px;
+	--gradient-y: 0px;
+
+	@variant lg {
+		--gradient-x: var(--x);
+		--gradient-y: var(--y);
+	}
+
+	background: radial-gradient(
+		600px at var(--gradient-x) var(--gradient-y),
+		rgba(29, 78, 216, 0.15),
+		transparent 80%
+	);
+}

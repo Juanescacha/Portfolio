@@ -1,0 +1,18 @@
+---
+---
+
+<script>
+const element = document.querySelector<HTMLElement>("[data-mouse]")
+
+const handlePointerMove = (event: PointerEvent) => {
+	element?.style.setProperty("--x", `${event.clientX}px`)
+	element?.style.setProperty("--y", `${event.clientY}px`)
+}
+
+window.addEventListener("pointermove", handlePointerMove)
+</script>
+
+<div
+	data-mouse
+	class="mouse-gradient absolute lg:fixed pointer-events-none inset-0"
+/>
