@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components"
 import { profile, sections, socials } from "@/data"
 ---
 
@@ -59,9 +60,9 @@ sections.forEach((section) => {
 	<ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
 		{socials.map((social) => (
 			<li class="mr-5 shrink-0 text-xs">
-				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (opens in a new tab)`} class="block">
+				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (opens in a new tab)`} class="block hover:text-teal-300 focus-visible:text-teal-300 transition-all motion-reduce:transition-none">
 					<span class="sr-only">{social.title}</span>
-					{social.title}
+					<Icon name={`simple-icons:${social.icon}`} class="size-6" />
 				</a>
 			</li>
 		))}

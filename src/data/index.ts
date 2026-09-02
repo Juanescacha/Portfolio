@@ -27,22 +27,22 @@ export const socials = [
 	{
 		title: "GitHub",
 		url: "https://www.github.com/juanescacha",
-		icon: "",
+		icon: "github",
 	},
 	{
 		title: "LinkedIn",
 		url: "https://www.linkedin.com/in/juanescacha/",
-		icon: "",
+		icon: "linkedin",
 	},
 	{
 		title: "LeetCode",
 		url: "https://leetcode.com/u/Juanescacha/",
-		icon: "",
+		icon: "leetcode",
 	},
 	{
 		title: "GitLab",
 		url: "https://www.gitlab.com/juanescacha",
-		icon: "",
+		icon: "gitlab",
 	},
 ] satisfies Social[]
 
