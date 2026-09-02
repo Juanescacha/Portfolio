@@ -1,4 +1,52 @@
 ---
+import { profile } from "@/data"
 ---
 
-<footer></footer>
+<footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+	<p>
+		Designed in&nbsp;
+		<a
+			href="https://www.figma.com"
+			target="_blank"
+			rel="noreferrer noopener"
+			aria-label="Figma (opens in a new tab)"
+			class="font-medium text-slate-400"
+			>Figma</a
+		>
+		&nbsp;and coded in&nbsp;
+		<a
+			href="https://www.jetbrains.com/webstorm/"
+			target="_blank"
+			rel="noreferrer noopener"
+			aria-label="Figma (opens in a new tab)"
+			class="font-medium text-slate-400"
+			>WebStorm</a
+		>
+		&nbsp;by {profile.name}. Built with&nbsp;
+		<a
+			href="https://astro.build/"
+			target="_blank"
+			rel="noreferrer noopener"
+			aria-label="Astro (opens in a new tab)"
+			class="font-medium text-slate-400"
+			>Astro</a
+		>&nbsp;and&nbsp;
+		<a
+			href="https://www.tailwindcss.com"
+			target="_blank"
+			rel="noreferrer noopener"
+			aria-label="Tailwind CSS (opens in a new tab)"
+			class="font-medium text-slate-400"
+			>Tailwind CSS</a
+		>, deployed with&nbsp;
+		<a
+			href="https://www.vercel.com"
+			target="_blank"
+			rel="noreferrer noopener"
+			aria-label="Vercel (opens in a new tab)"
+			class="font-medium text-slate-400"
+			>Vercel</a
+		>.
+	</p>
+	<p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
+</footer>
