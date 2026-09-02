@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css"
+import { Font } from "astro:assets"
 import About from "@/components/sections/About.astro"
 import Experience from "@/components/sections/Experience.astro"
 import Footer from "@/components/sections/Footer.astro"
@@ -17,6 +18,7 @@ import { profile } from "@/data"
 		<meta name="viewport" content="width=device-width">
 		<meta name="generator" content={Astro.generator}>
 		<title>{profile.name}</title>
+		<Font cssVariable="--font-inter" preload />
 	</head>
 	<body
 		class="bg-slate-900 text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 leading-relaxed font-sans"
