@@ -9,3 +9,11 @@ html {
 body {
 	font-family: var(--font-inter);
 }
+
+.active .nav-indicator {
+	@apply w-16 bg-slate-200 opacity-100;
+}
+
+.active .nav-text {
+	@apply text-slate-200;
+}
