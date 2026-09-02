@@ -8,8 +8,8 @@ import { experiences, sections } from "@/data"
 	<ol class="group/list">
 		{experiences.map((experience) => {
 
-			const start = `${experience.start.month} ${experience.start.year}`
-			const end = experience.end ? `${experience.end.month} ${experience.end.year}` : "Present"
+			const start = [experience.start?.month && experience.start.month, experience.start?.year && experience.start.year].filter(Boolean).join(' ')
+			const end = experience.end ? [experience.end?.month && experience.end.month, experience.end?.year && experience.end.year].filter(Boolean).join(' ') : "Present";
 
 			return (
 			<li class="mb-12">

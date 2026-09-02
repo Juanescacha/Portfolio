@@ -17,12 +17,12 @@ export interface Experience {
 	country: string
 	description: string
 	start: {
-		month: string
-		year: number
+		month?: string
+		year?: number
 	}
 	end?: {
-		month: string
-		year: number
+		month?: string
+		year?: number
 	}
 	technologies: Technologies[]
 	url: string
