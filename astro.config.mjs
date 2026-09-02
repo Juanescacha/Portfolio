@@ -2,10 +2,11 @@
 import react from "@astrojs/react"
 import tailwindcss from "@tailwindcss/vite"
 import { defineConfig, fontProviders } from "astro/config"
+import icon from "astro-icon"
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [react()],
+	integrations: [react(), icon()],
 
 	vite: {
 		plugins: [tailwindcss()],
