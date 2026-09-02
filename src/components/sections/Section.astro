@@ -1,15 +1,14 @@
 ---
 interface Props {
-	id: string
-	ariaLabel: string
 	title: string
+	ariaLabel: string
 }
 
-const { id, ariaLabel, title } = Astro.props
+const { title, ariaLabel } = Astro.props
 ---
 
 <section
-	id={id}
+	id={title}
 	aria-label={ariaLabel}
 	class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
 >
