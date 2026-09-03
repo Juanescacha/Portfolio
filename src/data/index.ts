@@ -3,7 +3,7 @@ import type { Certificate, Experience, Profile, Project, Social } from "./types"
 export type { Certificate, Experience, Profile, Project, Social }
 
 export const profile: Profile = {
-	name: "Juan Esteban Camargo",
+	name: "Juan Camargo",
 	role: "Software Engineer",
 	bio: "A passionate software engineer with a love for creating innovative solutions.",
 	about: [
