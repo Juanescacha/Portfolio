@@ -46,6 +46,19 @@ export const socials = [
 
 export const experiences = [
 	{
+		company: "Lulos",
+		position: "Co-Founder & Full Stack Developer",
+		country: "Colombia",
+		description:
+			"Digital solutions company specializing in web development, technical SEO, local SEO, and the implementation of scalable digital solutions for businesses. Lead the end-to-end development of web projects, from planning and technical implementation to optimization, deployment, and continuous improvement, combining software development, performance, and organic search strategy. ---- Delivered digital solutions for clients including CIT Consultoría Integral de Tránsito, GastroGest Pro, and Tiffany Esthetic Group IPS, among others. Projects have included website development, technical optimization, digital transformation, and search visibility improvements, achieving results such as 48,0+ impressions, 708 organic clicks, and an average Google Search Console position of 8.2.",
+		start: {
+			// month: "FEB",
+			year: 2026,
+		},
+		technologies: ["Next.js", "TypeScript"],
+		url: "https://www.lulos.com/",
+	},
+	{
 		company: "Cloudnonic",
 		position: "Full Stack Developer",
 		country: "Canada",
