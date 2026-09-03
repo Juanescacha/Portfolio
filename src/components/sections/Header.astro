@@ -60,7 +60,7 @@ sections.forEach((section) => {
 	<ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
 		{socials.map((social) => (
 			<li class="mr-5 shrink-0 text-xs">
-				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (opens in a new tab)`} class="block hover:text-slate-200 focus-visible:text-slate-200 hover:-translate-y-1 focus-visible:-translate-y-2 transition-all motion-reduce:transition-none">
+				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (opens in a new tab)`} class="block hover:-translate-y-1 focus-visible:-translate-y-1 transition-all motion-reduce:transition-none">
 					<span class="sr-only">{social.title}</span>
 					<Icon name={`simple-icons:${social.icon}`} class="size-6" />
 				</a>

@@ -36,5 +36,5 @@ body {
 
 a:hover,
 a:focus-visible {
-	@apply text-slate-200 transition-all motion-reduce:transition-none;
+	@apply text-teal-300 transition-all motion-reduce:transition-none;
 }
