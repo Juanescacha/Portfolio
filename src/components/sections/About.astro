@@ -1,13 +1,13 @@
 ---
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
-import { profile, sections } from "@/data"
+import { profile, sections, ui } from "@/data"
 import { marked } from "@/utils/marked.ts"
 
 const about = marked.parse(profile.about)
 ---
 
-<Section title={sections.about} ariaLabel="About me">
+<Section title={sections.about} ariaLabel={ui.ally.aboutMe}>
 	<div set:html={about} class="about-markdown" />
 	<div class="mt-12">
 		<a
@@ -17,7 +17,7 @@ const about = marked.parse(profile.about)
 			aria-label="View Full Resume (opens in a new tab)"
 			class="inline-flex items-baseline leading-tight font-semibold text-slate-200 group/link text-base"
 		>
-			View Full Resume
+			{ui.basic.viewFullResume}
 			<Arrow />
 		</a>
 	</div>

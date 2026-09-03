@@ -1,10 +1,10 @@
 ---
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
-import { projects, sections } from "@/data"
+import { projects, sections, ui } from "@/data"
 ---
 
-<Section title={sections.projects} ariaLabel="Selected Projects">
+<Section title={sections.projects} ariaLabel={ui.ally.selectedProjects}>
 	<ul class="group/list">
 		{projects.map((project) => (
 			<li class="mb-12">
@@ -20,7 +20,7 @@ import { projects, sections } from "@/data"
 								href={project.deployUrl}
 								target="_blank"
 								rel="noreferrer noopener"
-								aria-label={`${project.name} (opens in new page)`}
+								aria-label={`${project.name} (${ui.ally.opensInNewTab})`}
 								class="inline-flex items-baseline font-medium leading-tight text-slate-200 group/link text-base"
 							>
 								<span
@@ -30,7 +30,7 @@ import { projects, sections } from "@/data"
 							</a>
 						</h3>
 						<p>{project.description}</p>
-						<ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+						<ul class="mt-2 flex flex-wrap" aria-label={ui.ally.techUsed}>
 							{project.technologies.map((technology) => (
 								<li class="mr-1.5 mt-2 flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs/5 font-medium text-teal-300">
 									{technology}

@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components"
-import { profile, sections, socials } from "@/data"
+import { profile, sections, socials, ui } from "@/data"
 ---
 
 <script>
@@ -46,7 +46,7 @@ sections.forEach((section) => {
 			{profile.role}
 		</h2>
 		<p class="mt-4 max-w-xs leading-normal">{profile.bio}</p>
-		<nav class="nav hidden lg:block" aria-label="In-page jump links">
+		<nav class="nav hidden lg:block" aria-label={ui.ally.inPageJumpLinks}>
 			<ul class="mt-16 w-max">
 				{Object.keys(sections).map((section) => (
 					<li><a href={`#${section}`} data-nav-link class="group flex items-center py-3">
@@ -59,10 +59,10 @@ sections.forEach((section) => {
 	</div>
 
 	<!-- social icons -->
-	<ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
+	<ul class="ml-1 mt-8 flex items-center" aria-label={ui.ally.socialMediaLinks}>
 		{socials.map((social) => (
 			<li class="mr-5 shrink-0 text-xs">
-				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (opens in a new tab)`} class="block hover:-translate-y-1 focus-visible:-translate-y-1 transition-all motion-reduce:transition-none">
+				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (${ui.ally.opensInNewTab})`} class="block hover:-translate-y-1 focus-visible:-translate-y-1 transition-all motion-reduce:transition-none">
 					<span class="sr-only">{social.title}</span>
 					<Icon name={`simple-icons:${social.icon}`} class="size-6" />
 				</a>

@@ -2,6 +2,33 @@ import type { Certificate, Experience, Profile, Project, Social } from "./types"
 
 export type { Certificate, Experience, Profile, Project, Social }
 
+export const languages = {
+	es: "es",
+	en: "en",
+} as const
+
+export type Language = keyof typeof languages
+
+export const defaultLanguage: Language = languages.en
+
+export const ui = {
+	ally: {
+		aboutMe: "About me",
+		workExperience: "Work experience",
+		selectedProjects: "Selected Projects",
+		techUsed: "Technologies used",
+		socialMediaLinks: "Social media",
+		opensInNewTab: "Opens in a new tab",
+		inPageJumpLinks: "In-page jump links",
+	},
+	basic: {
+		present: "Present",
+		from: "From",
+		to: "to",
+		viewFullResume: "View Full Resume",
+	},
+}
+
 export const profile: Profile = {
 	name: "Juan Camargo",
 	role: "Software Engineer",

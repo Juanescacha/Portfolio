@@ -1,27 +1,27 @@
 ---
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
-import { experiences, sections } from "@/data"
+import { experiences, sections, ui } from "@/data"
 ---
 
-<Section title={sections.experience} ariaLabel="Work experience">
+<Section title={sections.experience} ariaLabel={ui.ally.workExperience}>
 	<ol class="group/list">
 		{experiences.map((experience) => {
 
 			const start = [experience.start?.month && experience.start.month, experience.start?.year && experience.start.year].filter(Boolean).join(' ')
-			const end = experience.end ? [experience.end?.month && experience.end.month, experience.end?.year && experience.end.year].filter(Boolean).join(' ') : "Present";
+			const end = experience.end ? [experience.end?.month && experience.end.month, experience.end?.year && experience.end.year].filter(Boolean).join(' ') : ui.basic.present;
 
 			return (
 			<li class="mb-12">
 				<div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50">
 					<div class="absolute hidden -inset-4 z-0 rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:drop-shadow-lg lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
 					{/* biome-ignore lint/a11y/useAriaPropsSupportedByRole: biome is wrong */}
-					<header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label={`From ${start} to ${end}`}>
+					<header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label={`${ui.basic.from} ${start} ${ui.basic.to} ${end}`}>
 						{start} - {end}
 					</header>
 					<div class="z-10 sm:col-span-6">
 						<h3 class="font-medium leading-snug text-slate-200">
-							<a href={experience.url} target="_blank" rel="noreferrer noopener" aria-label={`${experience.position} at ${experience.company} (opens in a new tab)`} class="inline-flex items-baseline font-medium leading-tight text-slate-200 group/link text-base">
+							<a href={experience.url} target="_blank" rel="noreferrer noopener" aria-label={`${experience.position} at ${experience.company} ${ui.ally.opensInNewTab}`} class="inline-flex items-baseline font-medium leading-tight text-slate-200 group/link text-base">
 								<span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
 								{experience.position} · {experience.company} <Arrow />
 							</a>
@@ -29,7 +29,7 @@ import { experiences, sections } from "@/data"
 						<p class="mt-2 text-sm leading-normal">
 							{experience.description}
 						</p>
-						<ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+						<ul class="mt-2 flex flex-wrap" aria-label={ui.ally.techUsed}>
 							{experience.technologies.map((technology) => (
 								<li class="mr-1.5 mt-2 flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs/5 font-medium text-teal-300">
 									{technology}
