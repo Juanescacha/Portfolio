@@ -41,24 +41,25 @@ body {
 
 a:hover,
 a:focus-visible {
-	@apply text-teal-300 transition-all motion-reduce:transition-none;
+	@apply text-teal-300! transition-all motion-reduce:transition-none;
 }
 
-.markdown {
+.about-markdown {
 	strong {
 		@apply font-medium;
 	}
 
 	a {
 		@apply text-slate-200;
-
-		:hover,
-		:focus-visible {
-			@apply text-teal-300 transition-all motion-reduce:transition-none;
-		}
 	}
 
 	p {
 		@apply not-last:mb-4;
+	}
+}
+
+.footer-markdown {
+	a {
+		@apply font-medium text-slate-400;
 	}
 }

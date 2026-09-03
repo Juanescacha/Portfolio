@@ -3,6 +3,7 @@ export interface Profile {
 	role: string
 	bio: string
 	about: string
+	footer: string
 }
 
 export type Social = {

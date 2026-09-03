@@ -8,14 +8,14 @@ const about = marked.parse(profile.about)
 ---
 
 <Section title={sections.about} ariaLabel="About me">
-	<div set:html={about} class="markdown" />
+	<div set:html={about} class="about-markdown" />
 	<div class="mt-12">
 		<a
 			href="/Juan_Camargo_Resume.pdf"
 			target="_blank"
 			rel="noopener noreferrer"
 			aria-label="View Full Resume (opens in a new tab)"
-			class="inline-block items-baseline leading-tight font-semibold text-slate-200 group/link text-base"
+			class="inline-flex items-baseline leading-tight font-semibold text-slate-200 group/link text-base"
 		>
 			View Full Resume
 			<Arrow />

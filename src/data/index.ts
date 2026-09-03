@@ -13,6 +13,12 @@ Currently, I'm a Senior Frontend Engineer at [**Klaviyo**](https://www.google.co
 Previously, I’ve worked across a wide range of environments — from product studios to startups and large tech companies — including Apple, Starry Internet, and Upstatement. Outside of my day-to-day work, I also created an online video course a few years ago which walks through building a real-world, API-driven application from scratch. These experiences have shaped how I think about building products that are both well-crafted and widely usable.
 
 In my spare time, you can usually find me climbing, playing tennis, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds.`,
+	footer: `Designed in [Figma](https://www.figma.com) and coded in [WebStorm](https://www.jetbrains.com/webstorm/) by Juan Camargo.
+
+Built with [Astro](https://astro.build/) and [Tailwind CSS](https://www.tailwindcss.com), deployed with [Vercel](https://www.vercel.com).
+
+&copy; ${new Date().getFullYear()}. All rights reserved.
+`,
 }
 
 export const sections = {

@@ -1,55 +1,11 @@
 ---
 import { profile } from "@/data"
+import { marked } from "@/utils/marked.ts"
+
+const footer = marked.parse(profile.footer)
 ---
 
 <footer
-	class="max-w-md text-sm text-slate-500 mb-[calc(20vh-48px)] lg:mb-[calc(20vh-96px)] z-50"
->
-	<p>
-		Designed in&nbsp;
-		<a
-			href="https://www.figma.com"
-			target="_blank"
-			rel="noreferrer noopener"
-			aria-label="Figma (opens in a new tab)"
-			class="font-medium text-slate-400"
-			>Figma</a
-		>
-		&nbsp;and coded in&nbsp;
-		<a
-			href="https://www.jetbrains.com/webstorm/"
-			target="_blank"
-			rel="noreferrer noopener"
-			aria-label="Webstorm (opens in a new tab)"
-			class="font-medium text-slate-400"
-			>WebStorm</a
-		>
-		&nbsp;by {profile.name}. <br>
-		Built with&nbsp;
-		<a
-			href="https://astro.build/"
-			target="_blank"
-			rel="noreferrer noopener"
-			aria-label="Astro (opens in a new tab)"
-			class="font-medium text-slate-400"
-			>Astro</a
-		>&nbsp;and&nbsp;
-		<a
-			href="https://www.tailwindcss.com"
-			target="_blank"
-			rel="noreferrer noopener"
-			aria-label="Tailwind CSS (opens in a new tab)"
-			class="font-medium text-slate-400"
-			>Tailwind CSS</a
-		>, deployed with&nbsp;
-		<a
-			href="https://www.vercel.com"
-			target="_blank"
-			rel="noreferrer noopener"
-			aria-label="Vercel (opens in a new tab)"
-			class="font-medium text-slate-400"
-			>Vercel</a
-		>.
-	</p>
-	<p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
-</footer>
+	set:html={footer}
+	class="footer-markdown max-w-md text-sm text-slate-500 mb-[calc(20vh-48px)] lg:mb-[calc(20vh-96px)] z-50"
+/>
