@@ -14,12 +14,19 @@ export default defineConfig({
 
 	fonts: [
 		{
-			provider: fontProviders.google(),
+			provider: fontProviders.local(),
 			name: "Inter",
 			cssVariable: "--font-inter",
-			weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-			styles: ["normal"],
-			subsets: ["latin"],
+
+			options: {
+				variants: [
+					{
+						src: ["./src/assets/fonts/InterVariable3.woff2"],
+						weight: "100 900",
+						style: "normal",
+					},
+				],
+			},
 		},
 	],
 

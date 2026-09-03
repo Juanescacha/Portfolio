@@ -7,7 +7,9 @@ html {
 }
 
 body {
-	font-family: var(--font-inter);
+	font-family: var(--font-inter), sans-serif;
+	font-feature-settings: "cv11" 1, "cv02" 1, "ss03" 1;
+	font-optical-sizing: none;
 }
 
 .active .nav-indicator {
