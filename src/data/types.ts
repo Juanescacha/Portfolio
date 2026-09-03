@@ -2,7 +2,7 @@ export interface Profile {
 	name: string
 	role: string
 	bio: string
-	about: string[]
+	about: string
 }
 
 export type Social = {

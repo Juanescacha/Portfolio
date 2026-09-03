@@ -8,7 +8,10 @@ html {
 
 body {
 	font-family: var(--font-inter), sans-serif;
-	font-feature-settings: "cv11" 1, "cv02" 1, "ss03" 1;
+	font-feature-settings:
+		"cv11" 1,
+		"cv02" 1,
+		"ss03" 1;
 	font-optical-sizing: none;
 }
 
@@ -39,4 +42,16 @@ body {
 a:hover,
 a:focus-visible {
 	@apply text-teal-300 transition-all motion-reduce:transition-none;
+}
+
+a {
+	@apply text-slate-200;
+}
+
+.markdown strong {
+	@apply font-medium;
+}
+
+.markdown p {
+	@apply not-last:mb-4;
 }

@@ -1,13 +1,14 @@
 ---
+import { marked } from "marked"
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
 import { profile, sections } from "@/data"
+
+const about = marked.parse(profile.about)
 ---
 
 <Section title={sections.about} ariaLabel="About me">
-	{profile.about.map((paragraph) => (
-		<p class="mb-4">{paragraph}</p>
-	))}
+	<div set:html={about} class="markdown" />
 	<div class="mt-12">
 		<a
 			href="/Juan_Camargo_Resume.pdf"
