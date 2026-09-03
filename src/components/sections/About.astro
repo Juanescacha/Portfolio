@@ -1,8 +1,8 @@
 ---
-import { marked } from "marked"
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
 import { profile, sections } from "@/data"
+import { marked } from "@/utils/marked.ts"
 
 const about = marked.parse(profile.about)
 ---
