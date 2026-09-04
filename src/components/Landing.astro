@@ -1,0 +1,48 @@
+---
+import "@/styles/global.css"
+import { Font } from "astro:assets"
+import About from "@/components/sections/About.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Footer from "@/components/sections/Footer.astro"
+import Header from "@/components/sections/Header.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Mouse from "@/components/ui/Mouse.astro"
+import { getContent } from "@/data"
+
+const { profile } = getContent(Astro.currentLocale)
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="icon" href="/favicon.ico">
+		<meta name="viewport" content="width=device-width">
+		<meta name="generator" content={Astro.generator}>
+		<title>{profile.name}</title>
+		<Font cssVariable="--font-inter" preload />
+	</head>
+	<body
+		class="bg-slate-900 text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 leading-relaxed font-sans"
+	>
+		<Mouse />
+		<!--border shadow-->
+		<div
+			class="pointer-events-none bg-linear-to-b from-transparent to-slate-900 from-80% to-99% fixed inset-0 z-40"
+		/>
+		<div
+			class="mx-auto min-h-screen max-w-7xl px-6 md:px-12 py-12 md:py-16 lg:py-0"
+		>
+			<div class="lg:flex lg:justify-between lg:gap-4">
+				<Header />
+				<main id="content" class="pt-24 lg:w-[52%] lg:py-24">
+					<About />
+					<Experience />
+					<Projects />
+					<Footer />
+				</main>
+			</div>
+		</div>
+	</body>
+</html>

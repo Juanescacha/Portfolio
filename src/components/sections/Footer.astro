@@ -1,7 +1,8 @@
 ---
-import { profile } from "@/data"
+import { getContent } from "@/data"
 import { marked } from "@/utils/marked.ts"
 
+const { profile } = getContent(Astro.currentLocale)
 const footer = marked.parse(profile.footer)
 ---
 

@@ -1,5 +1,7 @@
 import { marked } from "marked"
-import { ui } from "@/data"
+import { getContent } from "@/data"
+
+const { ui } = getContent()
 
 const renderer = new marked.Renderer()
 

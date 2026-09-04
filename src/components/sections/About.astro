@@ -1,8 +1,10 @@
 ---
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
-import { profile, sections, ui } from "@/data"
+import { getContent } from "@/data"
 import { marked } from "@/utils/marked.ts"
+
+const { profile, sections, ui } = getContent(Astro.currentLocale)
 
 const about = marked.parse(profile.about)
 ---

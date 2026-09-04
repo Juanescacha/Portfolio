@@ -1,7 +1,9 @@
 ---
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
-import { experiences, sections, ui } from "@/data"
+import { getContent } from "@/data"
+
+const { experiences, sections, ui } = getContent(Astro.currentLocale)
 ---
 
 <Section title={sections.experience} ariaLabel={ui.ally.workExperience}>
