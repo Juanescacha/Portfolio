@@ -15,6 +15,7 @@ export const ui = {
 		socialMediaLinks: "Social media",
 		opensInNewTab: "Opens in a new tab",
 		inPageJumpLinks: "In-page jump links",
+		languageSelector: "Language selector",
 	},
 	basic: {
 		present: "Present",

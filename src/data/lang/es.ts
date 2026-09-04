@@ -15,12 +15,13 @@ export const ui = {
 		socialMediaLinks: "Redes sociales",
 		opensInNewTab: "Se abre en una pestaña nueva",
 		inPageJumpLinks: "Enlaces de navegación dentro de la página",
+		languageSelector: "Selector de idioma",
 	},
 	basic: {
 		present: "Presente",
 		from: "Desde",
 		to: "hasta",
-		viewFullResume: "Ver hoja de vida completa",
+		viewFullResume: "Ver Currículum",
 	},
 }
 

@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components"
-import { getContent } from "@/data"
+import { getContent, languages } from "@/data"
 
 const { profile, sections, socials, ui } = getContent(Astro.currentLocale)
 ---
@@ -61,6 +61,30 @@ sections.forEach((section) => {
 					</li>
 				))}
 			</ul>
+		</nav>
+		<nav
+			aria-label="{ui.ally.languageSelector}"
+			class="flex flex-wrap gap-2 items-center mt-12 max-w-md"
+		>
+			{Object.entries(languages).map(([locale, language], index) => (
+				<>
+					<a
+						href={locale === 'en' ? "/" : `/${locale}`}
+						aria-current={Astro.currentLocale === locale ? "page" : undefined}
+						hreflang={locale}
+						class={`${
+							Astro.currentLocale === locale
+								? "text-slate-200"
+								: "text-slate-500 hover:text-slate-200 focus-visible:text-slate-200"
+						} text-sm font-bold uppercase tracking-widest`}
+					>
+						{language}
+					</a>
+					{index !== Object.entries(languages).length - 1 && (
+								<span aria-hidden="true" class="font-medium">|</span>
+					)}
+				</>
+			))}
 		</nav>
 	</div>
 
