@@ -24,6 +24,19 @@ const { profile } = getContent(Astro.currentLocale)
 		<Font cssVariable="--font-inter" preload />
 		<link rel="alternate" hreflang="en" href="https://juanescacha.dev/en">
 		<link rel="alternate" hreflang="es" href="https://juanescacha.dev/es">
+
+		<script is:inline>
+		const storedTheme = localStorage.getItem("theme")
+
+		const systemPrefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)",
+		).matches
+
+		const shouldUseDark =
+			storedTheme === "dark" || (!storedTheme && systemPrefersDark)
+
+		document.documentElement.classList.toggle("dark", shouldUseDark)
+		</script>
 	</head>
 	<body
 		class="bg-slate-900 text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 leading-relaxed font-sans"

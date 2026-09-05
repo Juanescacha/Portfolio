@@ -16,6 +16,7 @@ export const ui = {
 		opensInNewTab: "Se abre en una pestaña nueva",
 		inPageJumpLinks: "Enlaces de navegación dentro de la página",
 		languageSelector: "Selector de idioma",
+		changeTheme: "Cambiar tema",
 	},
 	basic: {
 		present: "Presente",

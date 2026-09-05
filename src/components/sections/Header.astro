@@ -1,6 +1,8 @@
 ---
 import { Icon } from "astro-icon/components"
-import { getContent, languages } from "@/data"
+import LangSelector from "@/components/ui/LangSelector.astro"
+import ThemeToggle from "@/components/ui/ThemeToggle.astro"
+import { getContent } from "@/data"
 
 const { profile, sections, socials, ui } = getContent(Astro.currentLocale)
 ---
@@ -48,8 +50,8 @@ sections.forEach((section) => {
 			{profile.role}
 		</h2>
 		<p class="mt-4 max-w-xs leading-normal">{profile.bio}</p>
-		<nav class="nav hidden lg:block" aria-label={ui.ally.inPageJumpLinks}>
-			<ul class="mt-16 w-max">
+		<nav class="nav mt-16 hidden lg:block" aria-label={ui.ally.inPageJumpLinks}>
+			<ul class=" w-max">
 				{Object.entries(sections).map(([_, value]) => (
 					<li>
 						<a href={`#${value}`} data-nav-link class="group flex items-center py-3">
@@ -62,30 +64,8 @@ sections.forEach((section) => {
 				))}
 			</ul>
 		</nav>
-		<nav
-			aria-label="{ui.ally.languageSelector}"
-			class="flex flex-wrap gap-2 items-center mt-12 max-w-md"
-		>
-			{Object.entries(languages).map(([locale, language], index) => (
-				<>
-					<a
-						href={locale === 'en' ? "/" : `/${locale}`}
-						aria-current={Astro.currentLocale === locale ? "page" : undefined}
-						hreflang={locale}
-						class={`${
-							Astro.currentLocale === locale
-								? "text-slate-200"
-								: "text-slate-500 hover:text-slate-200 focus-visible:text-slate-200"
-						} text-sm font-bold uppercase tracking-widest`}
-					>
-						{language}
-					</a>
-					{index !== Object.entries(languages).length - 1 && (
-								<span aria-hidden="true" class="font-medium">|</span>
-					)}
-				</>
-			))}
-		</nav>
+		<LangSelector />
+		<ThemeToggle />
 	</div>
 
 	<!-- social icons -->

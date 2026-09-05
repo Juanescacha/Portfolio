@@ -16,6 +16,7 @@ export const ui = {
 		opensInNewTab: "Opens in a new tab",
 		inPageJumpLinks: "In-page jump links",
 		languageSelector: "Language selector",
+		changeTheme: "Change theme",
 	},
 	basic: {
 		present: "Present",

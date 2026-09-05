@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon/components"
+import { getContent } from "@/data"
+
+const { ui } = getContent(Astro.currentLocale)
+---
+
+<script>
+const button = document.querySelector<HTMLButtonElement>("#theme-toggle")
+
+function updateButton() {
+	const isDark = document.documentElement.classList.contains("dark")
+
+	button?.setAttribute("aria-pressed", String(isDark))
+}
+
+updateButton()
+
+button?.addEventListener("click", () => {
+	const isDark = document.documentElement.classList.toggle("dark")
+
+	localStorage.setItem("theme", isDark ? "dark" : "light")
+
+	updateButton()
+})
+</script>
+
+<button
+	id="theme-toggle"
+	type="button"
+	aria-label={ui.ally.changeTheme}
+	aria-pressed="false"
+	class="flex size-6 10 mt-7 items-center justify-center rounded-lg text-slate-200 transition-all cursor-pointer font-black drop-shadow-transparent hover:text-teal-300 duration-200 ease-in-out drop-shadow-lg hover:drop-shadow-white/30 hover:bg-white/0"
+>
+	<Icon name="ant-design:sun-filled" class="size-6 dark:hidden" />
+	<Icon name="ant-design:moon-filled" class="size-6 hidden dark:inline" />
+</button>
