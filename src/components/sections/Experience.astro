@@ -2,6 +2,7 @@
 import Section from "@/components/sections/Section.astro"
 import Arrow from "@/components/ui/Arrow.astro"
 import { getContent } from "@/data"
+import { marked } from "@/utils/marked.ts"
 
 const { experiences, sections, ui } = getContent(Astro.currentLocale)
 ---
@@ -28,9 +29,7 @@ const { experiences, sections, ui } = getContent(Astro.currentLocale)
 								{experience.position} · {experience.company} <Arrow />
 							</a>
 						</h3>
-						<p class="mt-2 text-sm leading-normal">
-							{experience.description}
-						</p>
+						<div class="mt-2 text-sm leading-normal experience-markdown" set:html={marked.parse(experience.description)} />
 						<ul class="mt-2 flex flex-wrap" aria-label={ui.ally.techUsed}>
 							{experience.technologies.map((technology) => (
 								<li class="mr-1.5 mt-2 flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs/5 font-medium text-teal-300">

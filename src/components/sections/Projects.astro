@@ -31,7 +31,7 @@ const { projects, sections, ui } = getContent(Astro.currentLocale)
 								{project.name} <Arrow />
 							</a>
 						</h3>
-						<p>{project.description}</p>
+						<p class="text-sm mt-2 leading-normal">{project.description}</p>
 						<ul class="mt-2 flex flex-wrap" aria-label={ui.ally.techUsed}>
 							{project.technologies.map((technology) => (
 								<li class="mr-1.5 mt-2 flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs/5 font-medium text-teal-300">

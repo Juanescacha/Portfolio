@@ -58,6 +58,12 @@ a:focus-visible {
 	}
 }
 
+.experience-markdown {
+	p {
+		@apply not-last:mb-4;
+	}
+}
+
 .footer-markdown {
 	a {
 		@apply font-medium text-slate-400;
