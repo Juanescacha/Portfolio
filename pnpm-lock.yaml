@@ -42,6 +42,9 @@ importers:
       '@biomejs/biome':
         specifier: ^2.5.11
         version: 2.5.11
+      '@iconify-json/ant-design':
+        specifier: ^1.2.9
+        version: 1.2.9
       '@iconify-json/simple-icons':
         specifier: ^1.2.94
         version: 1.2.94
@@ -510,6 +513,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@iconify-json/ant-design@1.2.9':
+    resolution: {integrity: sha512-cAP5tQXUj05Hb0o3nyjEzYofuU5luRm6IV4FNZ3KQkG2cfzvmM34WYJuNLA3/sWqfE0cHSaaaEGvIdAUq+bN2Q==}
 
   '@iconify-json/simple-icons@1.2.94':
     resolution: {integrity: sha512-l8UWzVxKaqZd9ABsE/M/9p6NyGkQnmCnOoZyhQmjlXCtY5PuL2rcWxOFk2l9pk7ux3ERMPkTLE4jl6kQpTkwxA==}
@@ -2319,6 +2325,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.28.2':
     optional: true
+
+  '@iconify-json/ant-design@1.2.9':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/simple-icons@1.2.94':
     dependencies:
