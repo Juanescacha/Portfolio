@@ -36,53 +36,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* -------------- Transition API -------------- */
-
-/*evita el crossfade por defecto que hace view Transition*/
-
-::view-transition-old(root),
-::view-transition-new(root) {
-	animation: none;
-	mix-blend-mode: normal;
-}
-
-/* necesario para que la vista nueva se revele limpiamente sobre la anterior*/
-
-::view-transition-image-pair(root) {
-	isolation: auto;
-}
-
-/*
-  Mientras hacemos el cambio de tema
-  desactivamos temporalmente las transiciones
-  normales de Tailwind/CSS.
-
-  Esto evita conflictos con:
-  transition-colors
-  duration-300
-  etc.
-*/
-html.theme-switching,
-html.theme-switching *,
-html.theme-switching *::before,
-html.theme-switching *::after {
-	transition: none !important;
-}
-
-/*
-  Accesibilidad:
-  si el usuario tiene reducido el movimiento,
-  no forzamos animaciones.
-*/
-@media (prefers-reduced-motion: reduce) {
-	::view-transition-old(root),
-	::view-transition-new(root) {
-		animation: none !important;
-	}
-}
-
-/* -------------- Transition API -------------- */
-
 body {
 	font-family: var(--font-inter), sans-serif;
 	font-feature-settings:
@@ -146,3 +99,36 @@ a:focus-visible {
 		@apply font-medium text-foreground;
 	}
 }
+
+/* -------------- Transition API -------------- */
+
+/* avoid default crossfade of view transitions */
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none;
+	mix-blend-mode: normal;
+}
+
+/* necesario para que la vista nueva se revele limpiamente sobre la anterior*/
+
+::view-transition-image-pair(root) {
+	isolation: auto;
+}
+
+/* While switching themes, disable normal transitions to avoid conflicts */
+html.theme-switching,
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+	transition: none !important;
+}
+
+/*a11y: if user has reduced motion*/
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation: none !important;
+	}
+}
+
+/* -------------- Transition API -------------- */
