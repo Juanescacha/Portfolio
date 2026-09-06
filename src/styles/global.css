@@ -13,6 +13,25 @@
 	--color-surface: color-mix(in oklab, var(--color-slate-200) 50%, transparent);
 	--color-border: var(--color-slate-200);
 	--color-border-strong: var(--color-slate-300);
+
+	/*--color-background: var(--color-stone-50);*/
+	/*--color-foreground: var(--color-slate-700);*/
+	/*--color-primary: var(--color-slate-950);*/
+	/*--color-muted: var(--color-slate-500);*/
+	/*--color-line: var(--color-slate-200);*/
+	/*--color-accent: var(--color-blue-500);*/
+	/*--color-accent-fg: var(--color-white);*/
+	/*--color-surface: color-mix(*/
+	/*	in oklab,*/
+	/*	var(--color-white) 92%,*/
+	/*	var(--color-slate-100)*/
+	/*);*/
+	/*--color-border: color-mix(in oklab, var(--color-slate-900) 8%, transparent);*/
+	/*--color-border-strong: color-mix(*/
+	/*	in oklab,*/
+	/*	var(--color-slate-900) 16%,*/
+	/*	transparent*/
+	/*);*/
 }
 
 .dark {
