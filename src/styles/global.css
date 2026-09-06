@@ -2,8 +2,45 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+	--color-background: var(--color-slate-50);
+	--color-foreground: var(--color-slate-600);
+	--color-primary: var(--color-slate-900);
+	--color-secondary: var(--color-slate-700);
+	--color-muted: var(--color-slate-400);
+	--color-line: var(--color-slate-300);
+	--color-accent: var(--color-teal-600);
+	--color-accent-fg: var(--color-white);
+	--color-surface: color-mix(in oklab, var(--color-slate-200) 50%, transparent);
+	--color-border: var(--color-slate-200);
+	--color-border-strong: var(--color-slate-300);
+}
+
+.dark {
+	--color-background: var(--color-slate-900);
+	--color-foreground: var(--color-slate-400);
+	--color-primary: var(--color-slate-200);
+	--color-secondary: var(--color-slate-200);
+	--color-muted: var(--color-slate-500);
+	--color-line: var(--color-slate-600);
+	--color-accent: var(--color-teal-300);
+	--color-accent-fg: var(--color-teal-900);
+	--color-surface: color-mix(in oklab, var(--color-slate-800) 50%, transparent);
+	--color-border: color-mix(in oklab, var(--color-slate-200) 10%, transparent);
+	--color-border-strong: color-mix(
+		in oklab,
+		var(--color-slate-200) 30%,
+		transparent
+	);
+}
+
 html {
 	scroll-behavior: smooth;
+	color-scheme: light;
+
+	&.dark {
+		color-scheme: dark;
+	}
 }
 
 body {
@@ -16,11 +53,11 @@ body {
 }
 
 .active .nav-indicator {
-	@apply w-16 bg-slate-200 opacity-100;
+	@apply w-16 bg-primary opacity-100;
 }
 
 .active .nav-text {
-	@apply text-slate-200;
+	@apply text-primary;
 }
 
 .mouse-gradient {
@@ -33,15 +70,15 @@ body {
 	}
 
 	background: radial-gradient(
-		600px at var(--gradient-x) var(--gradient-y),
-		rgba(29, 78, 216, 0.15),
+		in oklch 600px at var(--gradient-x) var(--gradient-y),
+		oklch(0.49 0.22 255.43 / 0.15),
 		transparent 80%
 	);
 }
 
 a:hover,
 a:focus-visible {
-	@apply text-teal-300! transition-all motion-reduce:transition-none;
+	@apply text-accent! transition-all motion-reduce:transition-none;
 }
 
 .about-markdown {
@@ -50,7 +87,7 @@ a:focus-visible {
 	}
 
 	a {
-		@apply text-slate-200;
+		@apply text-primary;
 	}
 
 	p {
@@ -66,6 +103,6 @@ a:focus-visible {
 
 .footer-markdown {
 	a {
-		@apply font-medium text-slate-400;
+		@apply font-medium text-foreground;
 	}
 }
