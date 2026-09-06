@@ -6,7 +6,6 @@
 	--color-background: var(--color-slate-50);
 	--color-foreground: var(--color-slate-600);
 	--color-primary: var(--color-slate-900);
-	--color-secondary: var(--color-slate-700);
 	--color-muted: var(--color-slate-400);
 	--color-line: var(--color-slate-300);
 	--color-accent: var(--color-teal-600);
@@ -20,7 +19,6 @@
 	--color-background: var(--color-slate-900);
 	--color-foreground: var(--color-slate-400);
 	--color-primary: var(--color-slate-200);
-	--color-secondary: var(--color-slate-200);
 	--color-muted: var(--color-slate-500);
 	--color-line: var(--color-slate-600);
 	--color-accent: var(--color-teal-300);
@@ -36,12 +34,54 @@
 
 html {
 	scroll-behavior: smooth;
-	color-scheme: light;
+}
 
-	&.dark {
-		color-scheme: dark;
+/* -------------- Transition API -------------- */
+
+/*evita el crossfade por defecto que hace view Transition*/
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none;
+	mix-blend-mode: normal;
+}
+
+/* necesario para que la vista nueva se revele limpiamente sobre la anterior*/
+
+::view-transition-image-pair(root) {
+	isolation: auto;
+}
+
+/*
+  Mientras hacemos el cambio de tema
+  desactivamos temporalmente las transiciones
+  normales de Tailwind/CSS.
+
+  Esto evita conflictos con:
+  transition-colors
+  duration-300
+  etc.
+*/
+html.theme-switching,
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+	transition: none !important;
+}
+
+/*
+  Accesibilidad:
+  si el usuario tiene reducido el movimiento,
+  no forzamos animaciones.
+*/
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation: none !important;
 	}
 }
+
+/* -------------- Transition API -------------- */
 
 body {
 	font-family: var(--font-inter), sans-serif;
