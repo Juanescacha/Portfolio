@@ -64,13 +64,17 @@ sections.forEach((section) => {
 				))}
 			</ul>
 		</nav>
-		<ThemeToggle />
-		<LangSelector />
 	</div>
 
-	<!-- social icons -->
-	<ul class="ml-1 mt-8 flex items-center" aria-label={ui.ally.socialMediaLinks}>
-		{socials.map((social) => (
+	<div class="flex flex-col items-start gap-8 mt-8">
+		<ThemeToggle />
+		<LangSelector />
+		<!-- social icons -->
+		<ul
+			class="order-1 lg:order-3 ml-1 flex items-center"
+			aria-label={ui.ally.socialMediaLinks}
+		>
+			{socials.map((social) => (
 			<li class="mr-5 shrink-0 text-xs">
 				<a href={social.url} title={social.title} target="_blank" rel="noopener noreferrer" aria-label={`${social.title} (${ui.ally.opensInNewTab})`} class="block hover:-translate-y-1 focus-visible:-translate-y-1 transition-all motion-reduce:transition-none">
 					<span class="sr-only">{social.title}</span>
@@ -78,5 +82,6 @@ sections.forEach((section) => {
 				</a>
 			</li>
 		))}
-	</ul>
+		</ul>
+	</div>
 </header>
