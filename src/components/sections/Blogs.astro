@@ -1,0 +1,50 @@
+---
+import Section from "@/components/sections/Section.astro"
+import Arrow from "@/components/ui/Arrow.astro"
+import { getContent } from "@/data"
+
+const { blogs, sections, ui } = getContent(Astro.currentLocale)
+---
+
+<Section title={sections.blogs} ariaLabel={ui.ally.selectedBlogs}>
+	<ul class="group/list">
+		{blogs.map((blog) => (
+				<li class="mb-12">
+					<div
+							class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50"
+					>
+						<div
+								class="absolute -inset-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-surface lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+						/>
+						<div class="z-10 sm:order-2 sm:col-span-6">
+							<p class="text-sm mt-2 leading-normal text-foreground">{blog.date.year}</p>
+							<h3>
+								<a
+										href={blog.url}
+										target="_blank"
+										rel="noreferrer noopener"
+										aria-label={`${blog.title} (${ui.ally.opensInNewTab})`}
+										class="inline-flex items-baseline font-medium leading-tight text-primary group/link text-base"
+								>
+								<span
+										class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+								/>
+									{blog.title} <Arrow />
+								</a>
+							</h3>
+						</div>
+						<img
+								loading="lazy"
+								width="200"
+								height="48"
+								decoding="async"
+								alt="img"
+								class="aspect-video object-cover rounded border-2 border-border transition group-hover:border-border-strong sm:order-1 sm:col-span-2 sm:translate-y-1"
+								style="color: transparent"
+								src={blog.imgSrc}
+						>
+					</div>
+				</li>
+		))}
+	</ul>
+</Section>

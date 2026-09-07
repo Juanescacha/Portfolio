@@ -2,6 +2,8 @@
 import "@/styles/global.css"
 import { Font } from "astro:assets"
 import About from "@/components/sections/About.astro"
+import Blogs from "@/components/sections/Blogs.astro"
+import Certificates from "@/components/sections/Certificates.astro"
 import Experience from "@/components/sections/Experience.astro"
 import Footer from "@/components/sections/Footer.astro"
 import Header from "@/components/sections/Header.astro"
@@ -79,6 +81,8 @@ const { profile, ui } = getContent(Astro.currentLocale)
 					<About />
 					<Experience />
 					<Projects />
+					<Certificates />
+					<Blogs />
 					<Footer />
 				</main>
 			</div>
