@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-icon/components"
+import { getContent } from "@/data"
+
+const { ui } = getContent()
+---
+
+<button
+	id="back-to-top"
+	type="button"
+	aria-label={ui.ally.backToTop}
+	title={ui.ally.backToTop}
+	data-visible="false"
+	class="fixed right-4 bottom-4 z-100 grid size-11 translate-y-3 scale-95 cursor-pointer place-items-center rounded-full bg-surface text-primary opacity-0 invisible pointer-events-none shadow-lg transition-all transition-discrete duration-200 hover:bg-background hover:-translate-y-0.5 hover:scale-100 active:translate-y-0 active:scale-95 focus-visible:outline-3 focus-visible:outline-offset-3 sm:right-6 sm:bottom-6 sm:size-12 data-[visible=true]:visible data-[visible=true]:pointer-events-auto data-[visible=true]:translate-y-0 data-[visible=true]:scale-100 data-[visible=true]:opacity-100 motion-reduce:transition-none"
+>
+	<Icon name="ant-design:arrow-up" class="size-6" />
+</button>
+
+<script>
+const button = document.querySelector<HTMLButtonElement>("#back-to-top")
+
+if (button) {
+	const updateVisibility = () =>
+		(button.dataset.visible = String(scrollY > 500))
+
+	updateVisibility()
+	addEventListener("scroll", updateVisibility, { passive: true })
+
+	button.addEventListener("click", () =>
+		scrollTo({
+			top: 0,
+			behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+				? "auto"
+				: "smooth",
+		}),
+	)
+}
+</script>
