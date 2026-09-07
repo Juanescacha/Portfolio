@@ -101,7 +101,7 @@ a:focus-visible,
 	}
 
 	a {
-		@apply relative dark:text-primary text-black after:bg-emerald-300 dark:after:bg-black after:absolute after:-inset-1 after:block after:-z-10 after:top-2/3 after:-left-0.5 after:-right-0.5 after:bottom-0 hover:after:top-0 after:transition-[top] after:duration-200 after:ease-[cubic-bezier(0,0.8,0.13,1)];
+		@apply relative dark:text-primary text-black after:bg-emerald-300 dark:after:bg-[#29789e] after:absolute after:-inset-1 after:block after:-z-10 after:top-2/3 after:-left-0.5 after:-right-0.5 after:bottom-0 hover:after:top-0 after:transition-[top] after:duration-200 after:ease-[cubic-bezier(0,0.8,0.13,1)];
 	}
 
 	p {
