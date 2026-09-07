@@ -61,4 +61,16 @@ export interface Certificate {
 		year: number
 	}
 	imgSrc: string
+	url: string
+}
+
+export interface Blog {
+	title: string
+	description: string
+	date: {
+		month: string
+		year: number
+	}
+	imgSrc: string
+	url: string
 }

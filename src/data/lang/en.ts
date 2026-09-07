@@ -11,6 +11,8 @@ export const ui = {
 		aboutMe: "About me",
 		workExperience: "Work experience",
 		selectedProjects: "Selected Projects",
+		selectedCertificates: "Selected Certificates",
+		selectedBlogs: "Selected Blogs",
 		techUsed: "Technologies used",
 		socialMediaLinks: "Social media",
 		opensInNewTab: "Opens in a new tab",
@@ -51,6 +53,8 @@ export const sections = {
 	about: "about",
 	experience: "experience",
 	projects: "projects",
+	certificates: "certificates",
+	blogs: "blogs",
 } as const
 
 export const socials = [
@@ -212,7 +216,8 @@ export const certificates: Certificate[] = [
 			month: "March",
 			year: 2023,
 		},
-		imgSrc: "",
+		imgSrc: "https://picsum.photos/200/204",
+		url: "",
 	},
 	{
 		name: "Scrum Foundation Professional Certificate",
@@ -221,7 +226,8 @@ export const certificates: Certificate[] = [
 			month: "January",
 			year: 2023,
 		},
-		imgSrc: "",
+		imgSrc: "https://picsum.photos/200/205",
+		url: "",
 	},
 	{
 		name: "EF Standard English Test: C2 Proficiency",
@@ -230,6 +236,40 @@ export const certificates: Certificate[] = [
 			month: "January",
 			year: 2023,
 		},
-		imgSrc: "",
+		imgSrc: "https://picsum.photos/200/206",
+		url: "",
+	},
+]
+
+export const blogs = [
+	{
+		title: "My First Blog Post",
+		description: "This is my first blog post.",
+		date: {
+			month: "January",
+			year: 2026,
+		},
+		imgSrc: "https://picsum.photos/200/207",
+		url: "",
+	},
+	{
+		title: "My First Blog Post",
+		description: "This is my first blog post.",
+		date: {
+			month: "January",
+			year: 2024,
+		},
+		imgSrc: "https://picsum.photos/200/208",
+		url: "",
+	},
+	{
+		title: "My First Blog Post",
+		description: "This is my first blog post.",
+		date: {
+			month: "January",
+			year: 2023,
+		},
+		imgSrc: "https://picsum.photos/200/209",
+		url: "",
 	},
 ]
