@@ -6,25 +6,16 @@ import Experience from "@/components/sections/Experience.astro"
 import Footer from "@/components/sections/Footer.astro"
 import Header from "@/components/sections/Header.astro"
 import Projects from "@/components/sections/Projects.astro"
+import BackToTop from "@/components/ui/BackToTop.astro"
 import Mouse from "@/components/ui/Mouse.astro"
 import { getContent } from "@/data"
 
-const { profile } = getContent(Astro.currentLocale)
+const { profile, ui } = getContent(Astro.currentLocale)
 ---
 
 <!DOCTYPE html>
 <html lang={Astro.currentLocale}>
 	<head>
-		<meta charset="utf-8">
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-		<link rel="icon" href="/favicon.ico">
-		<meta name="viewport" content="width=device-width">
-		<meta name="generator" content={Astro.generator}>
-		<title>{profile.name}</title>
-		<Font cssVariable="--font-inter" preload />
-		<link rel="alternate" hreflang="en" href="https://juanescacha.dev/en">
-		<link rel="alternate" hreflang="es" href="https://juanescacha.dev/es">
-
 		<script is:inline>
 		const storedTheme = localStorage.getItem("theme")
 
@@ -39,11 +30,42 @@ const { profile } = getContent(Astro.currentLocale)
 		document.documentElement.classList.toggle("scheme-light", !shouldUseDark)
 		document.documentElement.classList.toggle("scheme-dark", shouldUseDark)
 		</script>
+
+		<!-- SEO -->
+		<title>{profile.name} — {profile.role}</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width">
+		<meta name="generator" content={Astro.generator}>
+		<meta name="description" content={profile.bio}>
+
+		<!-- Open Graph -->
+		<!--<meta property="og:title" content={title} />-->
+		<!--<meta property="og:description" content={description} />-->
+		<!--<meta property="og:url" content={canonicalURL} />-->
+		<!--<meta property="og:image" content={imageURL} />-->
+		<!--<meta property="og:type" content={type} />-->
+
+		<!-- Twitter / X -->
+		<!--<meta name="twitter:card" content="summary_large_image" />-->
+		<!--<meta name="twitter:title" content={title} />-->
+		<!--<meta name="twitter:description" content={description} />-->
+		<!--<meta name="twitter:image" content={imageURL} />-->
+
+		<!-- Styles, Fonts and Assets -->
+		<Font cssVariable="--font-inter" preload />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="icon" href="/favicon.ico">
+		<!--<link rel="canonical" href={ui.ally.canonicalUrl}>-->
+		<!--<link rel="alternate" hreflang="en" href="https://juanescacha.dev/">-->
+		<!--<link rel="alternate" hreflang="es" href="https://juanescacha.dev/es/">-->
+		<!--<link rel="alternate" hreflang="x-default" href="https://juanescacha.dev/" />-->
 	</head>
 	<body
 		class="bg-background text-foreground antialiased selection:bg-accent selection:text-accent-fg leading-relaxed font-sans"
 	>
 		<Mouse />
+		<BackToTop />
 		<!--border shadow-->
 		<div
 			class="pointer-events-none bg-linear-to-b from-transparent to-background from-80% to-99% fixed inset-0 z-40"
