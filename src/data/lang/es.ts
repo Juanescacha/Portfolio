@@ -17,6 +17,8 @@ export const ui = {
 		inPageJumpLinks: "Enlaces de navegación dentro de la página",
 		languageSelector: "Selector de idioma",
 		changeTheme: "Cambiar tema",
+		canonicalUrl: "https://juanescacha.dev/es/",
+		backToTop: "Volver a la parte superior",
 	},
 	basic: {
 		present: "Presente",

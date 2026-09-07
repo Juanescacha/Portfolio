@@ -17,6 +17,8 @@ export const ui = {
 		inPageJumpLinks: "In-page jump links",
 		languageSelector: "Language selector",
 		changeTheme: "Change theme",
+		canonicalUrl: "https://juanescacha.dev/",
+		backToTop: "Back to top",
 	},
 	basic: {
 		present: "Present",
