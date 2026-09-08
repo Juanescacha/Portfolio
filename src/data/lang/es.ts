@@ -1,12 +1,16 @@
+// Blogs Images
 import BlogImage1 from "@/assets/images/blogs/1.jpg"
 import BlogImage2 from "@/assets/images/blogs/2.jpg"
 import BlogImage3 from "@/assets/images/blogs/3.jpg"
-import CertificateImage1 from "@/assets/images/certificates/1.jpg"
-import CertificateImage2 from "@/assets/images/certificates/2.jpg"
-import CertificateImage3 from "@/assets/images/certificates/3.jpg"
+// Certificates Images
+import CertiprofImage from "@/assets/images/certificates/certiprof.webp"
+import EducationFirstImage from "@/assets/images/certificates/education-first.webp"
+import HelsinkiImage from "@/assets/images/certificates/helsinki.webp"
+
+// Projects Images
 import ProjectImage1 from "@/assets/images/projects/1.jpg"
 import ProjectImage2 from "@/assets/images/projects/2.jpg"
-import ProjectImage3 from "@/assets/images/projects/3.jpg"
+import PortfolioImage from "@/assets/images/projects/portfolio-v1.webp"
 
 import type {
 	Certificate,
@@ -213,8 +217,8 @@ export const projects: Project[] = [
 		description: "Un proyecto sencillo",
 		technologies: ["JavaScript", "React", "Three.js", "Tailwindcss"],
 		year: 2022,
-		deployUrl: "",
-		imgSrc: ProjectImage3,
+		deployUrl: "https://portfolio-juanes.vercel.app/",
+		imgSrc: PortfolioImage,
 	},
 ]
 
@@ -226,8 +230,28 @@ export const certificates: Certificate[] = [
 			month: "Marzo",
 			year: 2023,
 		},
-		imgSrc: CertificateImage1,
-		url: "",
+		imgSrc: HelsinkiImage,
+		url: "/certificate-fullstack.png",
+	},
+	{
+		name: "GraphQL",
+		issuer: "University of Helsinki",
+		date: {
+			month: "Abril",
+			year: 2023,
+		},
+		imgSrc: HelsinkiImage,
+		url: "/certificate-graphql.png",
+	},
+	{
+		name: "TypeScript",
+		issuer: "University of Helsinki",
+		date: {
+			month: "Mayo",
+			year: 2023,
+		},
+		imgSrc: HelsinkiImage,
+		url: "/certificate-typescript.png",
 	},
 	{
 		name: "Scrum Foundation Professional Certificate",
@@ -236,8 +260,8 @@ export const certificates: Certificate[] = [
 			month: "Enero",
 			year: 2023,
 		},
-		imgSrc: CertificateImage2,
-		url: "",
+		imgSrc: CertiprofImage,
+		url: "certificate-scrum.pdf",
 	},
 	{
 		name: "EF Standard English Test: C2 Proficiency",
@@ -246,35 +270,32 @@ export const certificates: Certificate[] = [
 			month: "Enero",
 			year: 2023,
 		},
-		imgSrc: CertificateImage3,
-		url: "",
+		imgSrc: EducationFirstImage,
+		url: "certificate-english.pdf",
 	},
 ]
 
 export const blogs = [
 	{
-		title: "My First Blog Post",
-		description: "This is my first blog post.",
+		title: "React vs Next.js en 2026: ¿cuál elegir para tu proyecto?",
 		date: {
-			month: "January",
+			month: "Julio",
 			year: 2026,
 		},
 		imgSrc: BlogImage1,
-		url: "",
+		url: "https://tri-devs.vercel.app/blog/react-vs-next-js-cual-elegir",
 	},
 	{
-		title: "My First Blog Post",
-		description: "This is my first blog post.",
+		title: "Core Web Vitals en 2026: guía técnica para desarrolladores",
 		date: {
-			month: "January",
-			year: 2024,
+			month: "Marzo",
+			year: 2026,
 		},
 		imgSrc: BlogImage2,
-		url: "",
+		url: "https://tri-devs.vercel.app/blog/core-web-vitals-guia-tecnica",
 	},
 	{
 		title: "My First Blog Post",
-		description: "This is my first blog post.",
 		date: {
 			month: "January",
 			year: 2023,

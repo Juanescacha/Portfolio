@@ -68,7 +68,6 @@ export interface Certificate {
 
 export interface Blog {
 	title: string
-	description: string
 	date: {
 		month: string
 		year: number
