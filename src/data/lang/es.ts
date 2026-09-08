@@ -2,6 +2,7 @@
 import BlogImage1 from "@/assets/images/blogs/1.jpg"
 import BlogImage2 from "@/assets/images/blogs/2.jpg"
 import BlogImage3 from "@/assets/images/blogs/3.jpg"
+
 // Certificates Images
 import CertiprofImage from "@/assets/images/certificates/certiprof.webp"
 import EducationFirstImage from "@/assets/images/certificates/education-first.webp"
