@@ -262,7 +262,7 @@ export const certificates: Certificate[] = [
 			year: 2023,
 		},
 		imgSrc: CertiprofImage,
-		url: "certificate-scrum.pdf",
+		url: "certificate-scrum.png",
 	},
 	{
 		name: "EF Standard English Test: C2 Proficiency",
@@ -272,7 +272,7 @@ export const certificates: Certificate[] = [
 			year: 2023,
 		},
 		imgSrc: EducationFirstImage,
-		url: "certificate-english.pdf",
+		url: "certificate-english.png",
 	},
 ]
 
