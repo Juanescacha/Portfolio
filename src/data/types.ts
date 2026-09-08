@@ -1,3 +1,5 @@
+import type { ImageMetadata } from "astro"
+
 export interface Profile {
 	name: string
 	role: string
@@ -50,7 +52,7 @@ export interface Project {
 	technologies: Technologies[]
 	year: number
 	deployUrl?: string
-	imgSrc: string
+	imgSrc: ImageMetadata
 }
 
 export interface Certificate {
@@ -60,7 +62,7 @@ export interface Certificate {
 		month: string
 		year: number
 	}
-	imgSrc: string
+	imgSrc: ImageMetadata
 	url: string
 }
 
@@ -71,6 +73,6 @@ export interface Blog {
 		month: string
 		year: number
 	}
-	imgSrc: string
+	imgSrc: ImageMetadata
 	url: string
 }

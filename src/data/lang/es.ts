@@ -1,3 +1,13 @@
+import BlogImage1 from "@/assets/images/blogs/1.jpg"
+import BlogImage2 from "@/assets/images/blogs/2.jpg"
+import BlogImage3 from "@/assets/images/blogs/3.jpg"
+import CertificateImage1 from "@/assets/images/certificates/1.jpg"
+import CertificateImage2 from "@/assets/images/certificates/2.jpg"
+import CertificateImage3 from "@/assets/images/certificates/3.jpg"
+import ProjectImage1 from "@/assets/images/projects/1.jpg"
+import ProjectImage2 from "@/assets/images/projects/2.jpg"
+import ProjectImage3 from "@/assets/images/projects/3.jpg"
+
 import type {
 	Certificate,
 	Experience,
@@ -181,7 +191,7 @@ export const projects: Project[] = [
 		technologies: ["Next.js", "TypeScript", "Motion", "Tailwindcss"],
 		year: 2025,
 		deployUrl: "",
-		imgSrc: "https://picsum.photos/200/201",
+		imgSrc: ProjectImage1,
 	},
 	{
 		name: "Endava Marketplace",
@@ -196,7 +206,7 @@ export const projects: Project[] = [
 		],
 		year: 2023,
 		deployUrl: "",
-		imgSrc: "https://picsum.photos/200/202",
+		imgSrc: ProjectImage2,
 	},
 	{
 		name: "Portfolio V1",
@@ -204,7 +214,7 @@ export const projects: Project[] = [
 		technologies: ["JavaScript", "React", "Three.js", "Tailwindcss"],
 		year: 2022,
 		deployUrl: "",
-		imgSrc: "https://picsum.photos/200/203",
+		imgSrc: ProjectImage3,
 	},
 ]
 
@@ -216,7 +226,7 @@ export const certificates: Certificate[] = [
 			month: "Marzo",
 			year: 2023,
 		},
-		imgSrc: "https://picsum.photos/200/204",
+		imgSrc: CertificateImage1,
 		url: "",
 	},
 	{
@@ -226,7 +236,7 @@ export const certificates: Certificate[] = [
 			month: "Enero",
 			year: 2023,
 		},
-		imgSrc: "https://picsum.photos/200/205",
+		imgSrc: CertificateImage2,
 		url: "",
 	},
 	{
@@ -236,7 +246,7 @@ export const certificates: Certificate[] = [
 			month: "Enero",
 			year: 2023,
 		},
-		imgSrc: "https://picsum.photos/200/206",
+		imgSrc: CertificateImage3,
 		url: "",
 	},
 ]
@@ -249,7 +259,7 @@ export const blogs = [
 			month: "January",
 			year: 2026,
 		},
-		imgSrc: "https://picsum.photos/200/207",
+		imgSrc: BlogImage1,
 		url: "",
 	},
 	{
@@ -259,7 +269,7 @@ export const blogs = [
 			month: "January",
 			year: 2024,
 		},
-		imgSrc: "https://picsum.photos/200/208",
+		imgSrc: BlogImage2,
 		url: "",
 	},
 	{
@@ -269,7 +279,7 @@ export const blogs = [
 			month: "January",
 			year: 2023,
 		},
-		imgSrc: "https://picsum.photos/200/209",
+		imgSrc: BlogImage3,
 		url: "",
 	},
 ]
