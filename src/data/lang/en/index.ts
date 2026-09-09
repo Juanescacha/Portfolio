@@ -1,0 +1,8 @@
+export { blogs } from "@/data/lang/en/blogs"
+export { certificates } from "@/data/lang/en/certificates"
+export { experiences } from "@/data/lang/en/experiences"
+export { profile } from "@/data/lang/en/profile"
+export { projects } from "@/data/lang/en/projects"
+export { sections } from "@/data/lang/en/sections"
+export { socials } from "@/data/lang/en/socials"
+export { ui } from "@/data/lang/en/ui"
