@@ -1,4 +1,6 @@
-export const ui = {
+import type { Ui } from "@/data/types.ts"
+
+export const ui: Ui = {
 	ally: {
 		aboutMe: "About me",
 		workExperience: "Work experience",

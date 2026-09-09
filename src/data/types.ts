@@ -1,5 +1,29 @@
 import type { ImageMetadata } from "astro"
 
+export interface Ui {
+	ally: {
+		aboutMe: string
+		workExperience: string
+		selectedProjects: string
+		selectedCertificates: string
+		selectedBlogs: string
+		techUsed: string
+		socialMediaLinks: string
+		opensInNewTab: string
+		inPageJumpLinks: string
+		languageSelector: string
+		changeTheme: string
+		canonicalUrl: string
+		backToTop: string
+	}
+	basic: {
+		present: string
+		from: string
+		to: string
+		viewFullResume: string
+	}
+}
+
 export interface Profile {
 	name: string
 	role: string
