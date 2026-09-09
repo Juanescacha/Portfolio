@@ -24,7 +24,7 @@ const { experiences, sections, ui } = getContent(Astro.currentLocale)
 					</header>
 					<div class="z-10 sm:col-span-6">
 						<h3 class="font-medium leading-snug text-primary">
-							<a href={experience.url} target="_blank" rel="noreferrer noopener" aria-label={`${experience.position} at ${experience.company} ${ui.ally.opensInNewTab}`} class="inline-flex items-baseline font-medium leading-tight text-primary group/link text-base">
+							<a href={experience.url} target="_blank" rel="noreferrer noopener" aria-label={`${experience.position} at ${experience.company} ${ui.ally.opensInNewTab}`} class="items-baseline font-medium leading-tight text-primary group/link text-base">
 								<span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
 								{experience.position} · {experience.company} <Arrow />
 							</a>
