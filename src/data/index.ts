@@ -1,5 +1,5 @@
-import * as en from "./lang/en/index.ts"
-import * as es from "./lang/es/index.ts"
+import * as en from "./lang/en"
+import * as es from "./lang/es"
 
 const content = {
 	en,
