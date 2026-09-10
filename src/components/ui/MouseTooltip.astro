@@ -1,58 +1,63 @@
 <div
-	data-project-tooltip
+	data-tooltip
 	role="tooltip"
 	hidden
 	class="fixed top-0 left-0 z-100 pointer-events-none"
 >
-	<img data-project-tooltip-image alt="" class="w-100 rounded-lg shadow-2xl">
+	<img data-tooltip-image alt="" class="w-80 rounded-lg">
 </div>
 
 <script>
 import { computePosition, flip, offset, shift } from "@floating-ui/dom"
 
-const list = document.querySelector("[data-project-list]")
-const tooltip = document.querySelector<HTMLElement>("[data-project-tooltip]")
-const image = tooltip?.querySelector<HTMLImageElement>(
-	"[data-project-tooltip-image]",
-)
+const lists = document.querySelectorAll<HTMLElement>("[data-tooltip-list]")
+const tooltip = document.querySelector<HTMLElement>("[data-tooltip]")
+const image = tooltip?.querySelector<HTMLImageElement>("[data-tooltip-image]")
 
-if (list && tooltip && image) {
+if (lists.length && tooltip && image) {
+	const mediaQuery = window.matchMedia("(min-width: 1024px)")
+
 	let x = 0
 	let y = 0
 	let frame = 0
 	let src = ""
+	let contextElement: Element | null = null
 
 	const cursor = {
 		getBoundingClientRect: () => new DOMRect(x, y),
-		contextElement: list,
+		get contextElement() {
+			return contextElement ?? undefined
+		},
 	}
 
-	const update = () => {
-		frame = 0
-
-		computePosition(cursor, tooltip, {
+	const update = async () => {
+		const position = await computePosition(cursor, tooltip, {
 			strategy: "fixed",
 			placement: "right-start",
-			middleware: [offset(12), flip(), shift()],
-		}).then(({ x, y }) => {
-			Object.assign(tooltip.style, {
-				left: `${x}px`,
-				top: `${y}px`,
-			})
+			middleware: [offset(12), flip(), shift({ padding: 8 })],
 		})
+
+		Object.assign(tooltip.style, {
+			left: `${position.x}px`,
+			top: `${position.y}px`,
+		})
+
+		frame = 0
 	}
 
-	list.addEventListener("pointermove", (event) => {
-		const project = (event.target as Element).closest<HTMLElement>(
-			"[data-project-preview]",
-		)
+	const move = (event: PointerEvent) => {
+		const list = event.currentTarget as HTMLElement
 
-		if (!project) {
-			tooltip.hidden = true
+		const target = document
+			.elementsFromPoint(event.clientX, event.clientY)
+			.find((element) => element.hasAttribute("data-tooltip-preview"))
+
+		if (!(target instanceof HTMLElement)) {
+			hide(list)
 			return
 		}
 
-		const preview = project.dataset.projectPreview
+		const preview = target.dataset.tooltipPreview
 
 		if (!preview) return
 
@@ -63,13 +68,58 @@ if (list && tooltip && image) {
 
 		x = event.clientX
 		y = event.clientY
+		contextElement = target
+
 		tooltip.hidden = false
+		list.classList.add("tooltip-active")
 
-		if (!frame) frame = requestAnimationFrame(update)
-	})
+		if (!frame) {
+			frame = requestAnimationFrame(update)
+		}
+	}
 
-	list.addEventListener("pointerleave", () => {
+	const hide = (list: HTMLElement) => {
 		tooltip.hidden = true
-	})
+		list.classList.remove("tooltip-active")
+	}
+
+	const leave = (event: PointerEvent) => {
+		hide(event.currentTarget as HTMLElement)
+	}
+
+	const enable = () => {
+		lists.forEach((list) => {
+			list.addEventListener("pointermove", move)
+			list.addEventListener("pointerleave", leave)
+		})
+	}
+
+	const disable = () => {
+		lists.forEach((list) => {
+			list.removeEventListener("pointermove", move)
+			list.removeEventListener("pointerleave", leave)
+			list.classList.remove("tooltip-active")
+		})
+
+		tooltip.hidden = true
+	}
+
+	const handleBreakpoint = () => {
+		if (mediaQuery.matches) {
+			enable()
+		} else {
+			disable()
+		}
+	}
+
+	handleBreakpoint()
+	mediaQuery.addEventListener("change", handleBreakpoint)
 }
 </script>
+
+<style is:global>
+.tooltip-active,
+.tooltip-active * {
+	cursor: none;
+}
+</style>
