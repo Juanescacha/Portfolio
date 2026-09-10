@@ -37,6 +37,8 @@ const { blogs, sections, ui } = getContent(Astro.currentLocale)
 						<Image
 								src={blog.imgSrc}
 								alt={blog.title}
+								sizes="(min-width: 1024px) 135px, (min-width: 640px) 215px, calc(100vw - 48px)"
+								widths={[135,160, 215, 270, 405, 430, 640, 768, 960, 1200, 1536, 1858]}
 								layout="constrained"
 								class="aspect-video object-cover rounded border-2 border-border transition group-hover:border-border-strong sm:order-1 sm:col-span-2 sm:translate-y-1"
 						/>
