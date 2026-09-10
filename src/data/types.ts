@@ -69,6 +69,8 @@ export type Technologies =
 	| "Sass"
 	| "Three.js"
 	| "Motion"
+	| "Google Analytics"
+	| "Swiper"
 
 export interface Project {
 	name: string
