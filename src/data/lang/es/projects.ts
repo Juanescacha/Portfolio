@@ -2,12 +2,21 @@ import CITImage from "@/assets/images/projects/cit.webp"
 import EndavaMarketplaceImage from "@/assets/images/projects/endava-marketplace.webp"
 import GastroGestProImage from "@/assets/images/projects/gastrogest-pro.webp"
 import GoMedicusGroupImage from "@/assets/images/projects/gomedicus-group.webp"
+import LulosImage from "@/assets/images/projects/lulos.webp"
 import PortfolioV1Image from "@/assets/images/projects/portfolio-v1.webp"
 import TiffanyEstheticGroupImage from "@/assets/images/projects/tiffany-esthetic-group.webp"
 
 import type { Project } from "@/data/types.ts"
 
 export const projects: Project[] = [
+	{
+		name: "Lulos Impulso Digital",
+		description: "Un proyecto sencillo",
+		technologies: ["Next.js", "TypeScript", "Motion", "Tailwindcss"],
+		year: 2026,
+		deployUrl: "https://tri-devs.vercel.app/",
+		imgSrc: LulosImage,
+	},
 	{
 		name: "Consultoría Integral de Transito (CIT)",
 		description: "Un proyecto sencillo",
