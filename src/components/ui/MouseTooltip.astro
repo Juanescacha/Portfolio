@@ -1,0 +1,75 @@
+<div
+	data-project-tooltip
+	role="tooltip"
+	hidden
+	class="fixed top-0 left-0 z-100 pointer-events-none"
+>
+	<img data-project-tooltip-image alt="" class="w-100 rounded-lg shadow-2xl">
+</div>
+
+<script>
+import { computePosition, flip, offset, shift } from "@floating-ui/dom"
+
+const list = document.querySelector("[data-project-list]")
+const tooltip = document.querySelector<HTMLElement>("[data-project-tooltip]")
+const image = tooltip?.querySelector<HTMLImageElement>(
+	"[data-project-tooltip-image]",
+)
+
+if (list && tooltip && image) {
+	let x = 0
+	let y = 0
+	let frame = 0
+	let src = ""
+
+	const cursor = {
+		getBoundingClientRect: () => new DOMRect(x, y),
+		contextElement: list,
+	}
+
+	const update = () => {
+		frame = 0
+
+		computePosition(cursor, tooltip, {
+			strategy: "fixed",
+			placement: "right-start",
+			middleware: [offset(12), flip(), shift()],
+		}).then(({ x, y }) => {
+			Object.assign(tooltip.style, {
+				left: `${x}px`,
+				top: `${y}px`,
+			})
+		})
+	}
+
+	list.addEventListener("pointermove", (event) => {
+		const project = (event.target as Element).closest<HTMLElement>(
+			"[data-project-preview]",
+		)
+
+		if (!project) {
+			tooltip.hidden = true
+			return
+		}
+
+		const preview = project.dataset.projectPreview
+
+		if (!preview) return
+
+		if (preview !== src) {
+			image.src = preview
+			src = preview
+		}
+
+		x = event.clientX
+		y = event.clientY
+		tooltip.hidden = false
+
+		if (!frame) frame = requestAnimationFrame(update)
+	})
+
+	list.addEventListener("pointerleave", () => {
+		tooltip.hidden = true
+	})
+}
+</script>

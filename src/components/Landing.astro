@@ -10,6 +10,7 @@ import Header from "@/components/sections/Header.astro"
 import Projects from "@/components/sections/Projects.astro"
 import BackToTop from "@/components/ui/BackToTop.astro"
 import Mouse from "@/components/ui/Mouse.astro"
+import MouseTooltip from "@/components/ui/MouseTooltip.astro"
 import { getContent } from "@/data"
 
 const { profile, ui } = getContent(Astro.currentLocale)
@@ -67,6 +68,7 @@ const { profile, ui } = getContent(Astro.currentLocale)
 		class="bg-background text-foreground antialiased selection:bg-accent selection:text-accent-fg leading-relaxed font-sans"
 	>
 		<Mouse />
+		<MouseTooltip />
 		<BackToTop />
 		<!--border shadow-->
 		<div
