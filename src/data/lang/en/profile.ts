@@ -1,12 +1,12 @@
 import type { Profile } from "@/data/types.ts"
 
 export const profile: Profile = {
-	name: "Juan Camargo",
+	name: "Juan Esteban Camargo",
 	role: "Software Engineer",
 	bio: "Make it work, make it right, make it fast",
 	about: `Hi I'm Juanes, a Full Stack Developer based in Colombia 🇨🇴 with **3+ years** of experience building web platforms end-to-end. I work mainly in JavaScript/TypeScript ecosystem — React, Next.js, and Vue.js on the Front End; NestJS, Prisma, and PostgreSQL on the Back End. My work spans healthcare, SaaS, ERP, and e-commerce, usually for teams working across multiple countries and time zones.
 
-I'm the Co-Founder and Full Stack Developer at **[Lulos Impulso Digital](https://tri-devs.vercel.app/)**, where we build web platforms, applications and drive technical and local SEO for clients like **[CIT](https://transitocitcali.com/ "Consultoría Integral de Transito (CIT)")** • **[GastroGest Pro](https://gastrogestpro.com/)** • **[Tiffany Esthetic Group](https://tiffany-esthetic-group-ips-sas.vercel.app/)** we've delivered measurable results — including 48,000+ search impressions, 708+ organic clicks, and an average Google Search Console position of 8.2.
+I'm the Co-Founder and Full Stack Developer at **[Lulos Impulso Digital](https://lulosimpulsodigital.com/)**, where we build web platforms, applications and drive technical and local SEO for clients like **[CIT](https://transitocitcali.com/ "Consultoría Integral de Transito (CIT)")** • **[GastroGest Pro](https://gastrogestpro.com/)** • **[Tiffany Esthetic Group](https://tiffany-esthetic-group-ips-sas.vercel.app/)** we've delivered measurable results — including 48,000+ search impressions, 708+ organic clicks, and an average Google Search Console position of 8.2.
 
 At **[Cloudnonic](https://www.cloudnonic.com/)** I helped build a multi-tenant healthcare platform with React, TypeScript, Redux Toolkit, React Query, NestJS and Prisma. At **[Vrband](https://vrband.eu/)** I built a SaaS analytics platform and an ERP system from scratch. I hold C2 English proficiency and a Full Stack Open certificate from the **[University of Helsinki](https://www.helsinki.fi/en)**.
 

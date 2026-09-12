@@ -15,7 +15,7 @@ export const projects: Project[] = [
 			"Agencia de crecimiento digital especializada en desarrollo web, SEO, GEO, AEO y soluciones digitales impulsadas por inteligencia artificial. La empresa combina tecnología, estrategia y enfoques basados en datos para ayudar a las empresas a fortalecer su presencia en línea, conectar con clientes potenciales y lograr un crecimiento medible tanto en mercados locales como globales.",
 		technologies: ["Next.js", "TypeScript", "Motion", "Tailwindcss"],
 		year: 2026,
-		deployUrl: "https://tri-devs.vercel.app/",
+		deployUrl: "https://lulosimpulsodigital.com/",
 		imgSrc: LulosImage,
 	},
 	{

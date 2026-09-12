@@ -13,7 +13,7 @@ Entregué soluciones digitales para clientes como CIT Consultoría Integral de T
 			year: 2026,
 		},
 		technologies: ["Next.js", "TypeScript"],
-		url: "https://tri-devs.vercel.app/",
+		url: "https://lulosimpulsodigital.com/",
 	},
 	{
 		company: "Cloudnonic",

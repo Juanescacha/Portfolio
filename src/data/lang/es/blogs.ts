@@ -11,7 +11,7 @@ export const blogs: Blog[] = [
 			year: 2026,
 		},
 		imgSrc: BlogImage1,
-		url: "https://tri-devs.vercel.app/blog/react-vs-next-js-cual-elegir",
+		url: "https://lulosimpulsodigital.com/blog/react-vs-next-js-cual-elegir",
 	},
 	{
 		title: "Core Web Vitals en 2026: guía técnica para desarrolladores",
@@ -20,7 +20,7 @@ export const blogs: Blog[] = [
 			year: 2026,
 		},
 		imgSrc: BlogImage2,
-		url: "https://tri-devs.vercel.app/blog/core-web-vitals-guia-tecnica",
+		url: "https://lulosimpulsodigital.com/blog/core-web-vitals-guia-tecnica",
 	},
 	{
 		title: "My First Blog Post",
