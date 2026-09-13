@@ -1,6 +1,7 @@
 import BlogImage1 from "@/assets/images/blogs/1.jpg"
 import BlogImage2 from "@/assets/images/blogs/2.jpg"
-import BlogImage3 from "@/assets/images/blogs/3.jpg"
+// import BlogImage3 from "@/assets/images/blogs/3.jpg"
+
 import type { Blog } from "@/data/types.ts"
 
 export const blogs: Blog[] = [
@@ -22,13 +23,13 @@ export const blogs: Blog[] = [
 		imgSrc: BlogImage2,
 		url: "https://lulosimpulsodigital.com/blog/core-web-vitals-guia-tecnica",
 	},
-	{
-		title: "My First Blog Post",
-		date: {
-			month: "January",
-			year: 2023,
-		},
-		imgSrc: BlogImage3,
-		url: "",
-	},
+	// {
+	// 	title: "My First Blog Post",
+	// 	date: {
+	// 		month: "January",
+	// 		year: 2023,
+	// 	},
+	// 	imgSrc: BlogImage3,
+	// 	url: "",
+	// },
 ]
