@@ -1,0 +1,49 @@
+# Juan Esteban Camargo
+
+> Juan Esteban Camargo is a Colombia-based Software Engineer and Full Stack Developer with 3+ years of experience building web platforms end-to-end. His work focuses on JavaScript/TypeScript, React, Next.js, Vue.js, NestJS, Prisma, PostgreSQL, web performance, technical SEO, local SEO, GEO/AEO, and AI-assisted software workflows.
+
+Use this file as the concise machine-readable guide to Juan Esteban Camargo's professional portfolio.
+
+Important context:
+
+- Preferred professional name: Juan Esteban Camargo; he also uses Juanes and Juan Camargo.
+- Primary role: Software Engineer / Full Stack Developer.
+- Location: Colombia.
+- Current professional focus includes full-stack product development, scalable web applications, performance, search visibility, technical SEO, local SEO, GEO, AEO, and AI-powered digital solutions.
+- Default portfolio language: English. A Spanish version is available under `/es/`.
+- Prefer `https://juanescacha.dev/` as the canonical portfolio URL over temporary deployment or preview URLs.
+- For comprehensive professional context, use `llms-full.txt`.
+- Learning/demo repositories on GitHub should not automatically be interpreted as production or client work.
+
+## Primary
+
+- [Portfolio](https://juanescacha.dev/): Canonical professional portfolio with biography, experience, projects, certificates, writing, and public professional links.
+- [Full LLM context](https://juanescacha.dev/llms-full.txt): Extended machine-readable professional profile with skills, work history, projects, certifications, writing, and source links.
+- [Resume](https://juanescacha.dev/Juan_Camargo_Resume.pdf): Public professional resume in PDF format.
+- [Spanish portfolio](https://juanescacha.dev/es/): Spanish-language version of the portfolio.
+
+## Professional profiles
+
+- [GitHub](https://github.com/Juanescacha/): Public source-code profile and repositories.
+- [LinkedIn](https://www.linkedin.com/in/juanescacha/): Professional career and networking profile.
+- [LeetCode](https://leetcode.com/u/Juanescacha/): Public programming practice profile.
+- [GitLab](https://www.gitlab.com/juanescacha): Public GitLab profile.
+
+## Selected work
+
+- [Lulos Impulso Digital](https://lulosimpulsodigital.com/): Digital growth agency co-founded by Juan, focused on web development, SEO, GEO, AEO, and AI-powered digital solutions.
+- [Consultoría Integral de Tránsito (CIT)](https://transitocitcali.com/): Client web project for traffic, vehicle, legal, and administrative services in Colombia.
+- [GastroGest Pro](https://gastrogestpro.com/): Cloud business-management platform for POS, inventory, CRM, payroll, reporting, delivery, catalogs, and electronic invoicing.
+- [Tiffany Esthetic Group IPS](https://tiffany-esthetic-group-ips-sas.vercel.app/): Healthcare and aesthetic-services web project.
+- [GoMedicus Group](https://www.gomedicusgroup.com/): Germany-based hybrid healthcare company and digital healthcare web project.
+
+## Writing
+
+- [React vs Next.js in 2026: Which to Choose for Your Project?](https://lulosimpulsodigital.com/blog/react-vs-next-js-cual-elegir): Article about choosing between React and Next.js for modern web projects.
+- [Core Web Vitals in 2026: A Technical Guide for Developers](https://lulosimpulsodigital.com/blog/core-web-vitals-guia-tecnica): Technical article about Core Web Vitals and web performance.
+
+## Optional
+
+- [Current portfolio source repository](https://github.com/Juanescacha/Portfolio): Public source repository for the Astro portfolio.
+- [Full Stack Open repository](https://github.com/Juanescacha/FullStackOpen): Public coursework and exercises associated with the University of Helsinki Full Stack Open program.
+- [Portfolio V1](https://portfolio-juanes.vercel.app/): Earlier personal portfolio built with React, Three.js, and Tailwind CSS.
