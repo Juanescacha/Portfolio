@@ -1,0 +1,66 @@
+---
+import "@/styles/global.css"
+import { Font } from "astro:assets"
+import Mouse from "@/components/ui/Mouse.astro"
+---
+
+<!DOCTYPE html>
+<html lang={Astro.currentLocale}>
+	<head>
+		<script is:inline>
+		const storedTheme = localStorage.getItem("theme")
+
+		const systemPrefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)",
+		).matches
+
+		const shouldUseDark =
+			storedTheme === "dark" || (!storedTheme && systemPrefersDark)
+
+		document.documentElement.classList.toggle("dark", shouldUseDark)
+		document.documentElement.classList.toggle("scheme-light", !shouldUseDark)
+		document.documentElement.classList.toggle("scheme-dark", shouldUseDark)
+		</script>
+
+		<title>404 | Page not Found</title>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<Font cssVariable="--font-inter" preload />
+		<meta
+			name="theme-color"
+			content="#F8FAFC"
+			media="(prefers-color-scheme: light)"
+		>
+
+		<meta
+			name="theme-color"
+			content="#161D2F"
+			media="(prefers-color-scheme: dark)"
+		>
+	</head>
+	<body
+		class="bg-background text-foreground antialiased selection:bg-accent selection:text-accent-fg leading-relaxed font-sans min-h-screen"
+	>
+		<Mouse />
+		<main class="flex min-h-screen items-center justify-center px-6">
+			<section class="flex items-center" aria-labelledby="error-title">
+				<h1
+					id="error-title"
+					class="text-2xl font-medium tracking-tight text-slate-300 sm:text-3xl"
+				>
+					404
+				</h1>
+
+				<div
+					class="mx-5 h-12 w-px bg-slate-600/70 sm:mx-6"
+					aria-hidden="true"
+				></div>
+
+				<p class="text-sm font-normal text-slate-400 sm:text-base">
+					This page could not be found.
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
