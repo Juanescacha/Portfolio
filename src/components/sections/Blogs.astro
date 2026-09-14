@@ -19,7 +19,7 @@ const { blogs, sections, ui } = getContent(Astro.currentLocale)
 						/>
 						<div class="z-10 sm:order-2 sm:col-span-6">
 							<p class="text-sm mt-2 leading-normal text-foreground">{blog.date.year}</p>
-							<h3>
+							<h4>
 								<a
 										href={blog.url}
 										target="_blank"
@@ -32,7 +32,7 @@ const { blogs, sections, ui } = getContent(Astro.currentLocale)
 								/>
 									{blog.title} <Arrow />
 								</a>
-							</h3>
+							</h4>
 						</div>
 						<Image
 								src={blog.imgSrc}

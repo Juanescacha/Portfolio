@@ -18,7 +18,7 @@ const { certificates, sections, ui } = getContent(Astro.currentLocale)
 								class="absolute -inset-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-surface lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
 						/>
 						<div class="z-10 order-2 col-span-6">
-							<h3>
+							<h4>
 								<a
 										href={certificate.url}
 										target="_blank"
@@ -31,7 +31,7 @@ const { certificates, sections, ui } = getContent(Astro.currentLocale)
 								/>
 									{certificate.name} <Arrow />
 								</a>
-							</h3>
+							</h4>
 							<p class="text-sm mt-2 leading-normal text-foreground">{certificate.issuer}</p>
 							<p class="text-sm mt-2 leading-normal text-foreground">{certificate.date.month} {certificate.date.year}</p>
 						</div>
