@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://juanescacha.dev
+Sitemap: https://juanescacha.dev/sitemap.xml
