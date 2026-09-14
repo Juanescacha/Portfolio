@@ -26,6 +26,7 @@ export interface Ui {
 
 export interface Profile {
 	name: string
+	username: string
 	role: string
 	phrase: string
 	bio: string
