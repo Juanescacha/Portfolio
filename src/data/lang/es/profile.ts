@@ -4,7 +4,7 @@ export const profile: Profile = {
 	name: "Juan Esteban Camargo",
 	role: "Ingeniero de Software",
 	phrase: "Haz que funcione, hazlo bien, hazlo rápido.",
-	bio: "Juan Esteban Camargo es ingeniero de software que construye apps web escalables y productos digitales con usabilidad, accesibilidad, rendimiento e impacto.",
+	bio: "Juan Esteban Camargo es un ingeniero de software que construye apps web escalables y productos digitales con usabilidad, accesibilidad, rendimiento e impacto.",
 	about: `Hola soy Juanes, Full Stack Developer con base en Colombia 🇨🇴 con **3+ años** de experiencia construyendo plataformas web integrales. Trabajo principalmente en el ecosistema JavaScript/TypeScript — React, Next.js y Vue.js en el Front End; NestJS, Prisma y PostgreSQL en el Back End. Mi trabajo ha sido en salud, SaaS, ERP y e-commerce, usualmente para equipos que trabajan en múltiples países y zonas horarias.
 
 Soy el Co-Founder y Full Stack Developer en **[Lulos Impulso Digital](https://lulosimpulsodigital.com/)**, donde construimos plataformas web, aplicativos e impulsamos el SEO técnico y local para clientes como **[CIT](https://transitocitcali.com/ "Consultoría Integral de Transito (CIT)")** • **[GastroGest Pro](https://gastrogestpro.com/)** • **[Tiffany Esthetic Group](https://tiffany-esthetic-group-ips-sas.vercel.app/)** hemos entregado resultados medibles — incluyendo 48,000+ impresiones de búsqueda, 708+ clics orgánicos, y una posición promedio de 8.2 en Google Search Console.
