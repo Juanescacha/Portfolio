@@ -2,6 +2,7 @@ import type { Profile } from "@/data/types.ts"
 
 export const profile: Profile = {
 	name: "Juan Esteban Camargo",
+	username: "Juanescacha",
 	role: "Ingeniero de Software",
 	phrase: "Haz que funcione, hazlo bien, hazlo rápido.",
 	bio: "Juan Esteban Camargo es un ingeniero de software que construye apps web escalables y productos digitales con usabilidad, accesibilidad, rendimiento e impacto.",

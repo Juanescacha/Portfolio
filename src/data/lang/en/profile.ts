@@ -2,6 +2,7 @@ import type { Profile } from "@/data/types.ts"
 
 export const profile: Profile = {
 	name: "Juan Esteban Camargo",
+	username: "Juanescacha",
 	role: "Software Engineer",
 	phrase: "Make it work, make it right, make it fast",
 	bio: "Juan Esteban Camargo is a software engineer building scalable web apps and digital products focused on usability, accessibility, performance, and impact.",
