@@ -48,13 +48,13 @@ const schema = Astro.currentLocale === "es" ? schemaEs : schemaEn
 		<meta name="generator" content={Astro.generator}>
 		<meta name="description" content={profile.bio}>
 		<meta name="author" content={profile.name}>
-		<link rel="describedby" href="/llms.txt">
-		<link rel="llms" href="/llms.txt" type="text/plain">
+		<link rel="describedby" href="https://juanescacha.dev/llms.txt">
+		<link rel="llms" href="https://juanescacha.dev/llms.txt" type="text/plain">
 		<link
 			rel="alternate"
 			type="text/markdown"
 			title="Compatible LLM Version"
-			href="/llms.txt"
+			href="https://juanescacha.dev/llms.txt"
 		>
 
 		<!-- Open Graph -->
@@ -65,7 +65,7 @@ const schema = Astro.currentLocale === "es" ? schemaEs : schemaEn
 		<meta property="og:image:width" content="2400">
 		<meta property="og:image:height" content="1260">
 		<meta property="og:type" content="website">
-		<meta property="og:site_name" content={profile.name}>
+		<meta property="og:site_name" content={profile.username}>
 		<meta property="og:locale" content={Astro.currentLocale}>
 
 		<!-- Twitter / X -->
