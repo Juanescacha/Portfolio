@@ -8,6 +8,8 @@ import icon from "astro-icon"
 export default defineConfig({
 	integrations: [react(), icon()],
 
+	site: "https://juanescacha.dev",
+
 	vite: {
 		plugins: [tailwindcss()],
 		server: {
