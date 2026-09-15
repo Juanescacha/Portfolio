@@ -19,7 +19,12 @@ import { getContent } from "@/data"
 
 const { profile, ui } = getContent(Astro.currentLocale)
 
+const title = `${profile.name} | ${profile.role}`
+
 const schema = Astro.currentLocale === "es" ? schemaEs : schemaEn
+const ogLocale = Astro.currentLocale === "en" ? "en_US" : "es_CO"
+const ogOtherLocale = Astro.currentLocale === "en" ? "es_CO" : "en_US"
+console.log(Astro.currentLocale)
 ---
 
 <!DOCTYPE html>
@@ -41,7 +46,7 @@ const schema = Astro.currentLocale === "es" ? schemaEs : schemaEn
 		</script>
 
 		<!-- SEO — -->
-		<title>{profile.name} | {profile.role}</title>
+		<title>{title}</title>
 		<meta charset="UTF-8">
 		<meta name="robots" content="index, follow">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +63,7 @@ const schema = Astro.currentLocale === "es" ? schemaEs : schemaEn
 		>
 
 		<!-- Open Graph -->
-		<meta property="og:title" content={`${profile.name} | ${profile.role}`}>
+		<meta property="og:title" content={title}>
 		<meta property="og:description" content={profile.bio}>
 		<meta property="og:url" content={ui.ally.canonicalUrl}>
 		<meta property="og:image" content="https://juanescacha.dev/og.png">
@@ -66,11 +71,12 @@ const schema = Astro.currentLocale === "es" ? schemaEs : schemaEn
 		<meta property="og:image:height" content="1260">
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content={profile.username}>
-		<meta property="og:locale" content={Astro.currentLocale}>
+		<meta property="og:locale" content={ogLocale}>
+		<meta property="og:locale:alternate" content={ogOtherLocale}>
 
 		<!-- Twitter / X -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content={`${profile.name} | ${profile.role}`}>
+		<meta name="twitter:title" content={title}>
 		<meta name="twitter:description" content={profile.bio}>
 		<meta name="twitter:url" content={ui.ally.canonicalUrl}>
 		<meta name="twitter:image" content="https://juanescacha.dev/og.png">
