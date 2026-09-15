@@ -5,17 +5,13 @@
 			"@type": "WebSite",
 			"@id": "https://juanescacha.dev/#website",
 			"url": "https://juanescacha.dev/",
-			"name": "Juan Esteban Camargo — Software Engineer Portfolio",
-			"alternateName": "Juanescacha Portfolio",
-			"description": "Professional portfolio of Software Engineer and Full Stack Developer Juan Esteban Camargo.",
+			"name": "Juan Esteban Camargo",
+			"alternateName": ["Juanescacha", "juanescacha.dev"],
 			"inLanguage": ["en", "es"],
-			"creator": {
-				"@id": "https://juanescacha.dev/#person"
-			},
 			"publisher": {
 				"@id": "https://juanescacha.dev/#person"
 			},
-			"copyrightHolder": {
+			"creator": {
 				"@id": "https://juanescacha.dev/#person"
 			}
 		},
@@ -24,15 +20,12 @@
 			"@id": "https://juanescacha.dev/#profile-page",
 			"url": "https://juanescacha.dev/",
 			"name": "Juan Esteban Camargo | Software Engineer",
-			"description": "Professional portfolio of Juan Esteban Camargo, a Colombia-based Software Engineer and Full Stack Developer with 3+ years of experience building scalable web platforms and working across software engineering, web performance, technical SEO, GEO, AEO, and AI-assisted development.",
+			"description": "Juan Esteban Camargo is a Colombia-based Software Engineer and Full Stack Developer with 3+ years of experience building scalable web platforms.",
 			"inLanguage": "en",
 			"isPartOf": {
 				"@id": "https://juanescacha.dev/#website"
 			},
 			"mainEntity": {
-				"@id": "https://juanescacha.dev/#person"
-			},
-			"about": {
 				"@id": "https://juanescacha.dev/#person"
 			},
 			"primaryImageOfPage": {
@@ -52,177 +45,19 @@
 			"name": "Juan Esteban Camargo",
 			"givenName": "Juan Esteban",
 			"familyName": "Camargo",
-			"alternateName": ["Juan Camargo", "Juanes", "Juanescacha"],
+			"alternateName": ["Juanes", "Juanescacha"],
 			"url": "https://juanescacha.dev/",
 			"image": {
 				"@id": "https://juanescacha.dev/#profile-image"
 			},
-			"mainEntityOfPage": {
-				"@id": "https://juanescacha.dev/#profile-page"
-			},
-			"description": "Colombia-based Software Engineer and Full Stack Developer with 3+ years of experience building web platforms end-to-end across healthcare, SaaS, ERP, e-commerce, and digital growth projects.",
-			"jobTitle": ["Software Engineer", "Full Stack Developer"],
-			"homeLocation": {
-				"@type": "Country",
-				"name": "Colombia"
-			},
-			"worksFor": {
-				"@id": "https://lulosimpulsodigital.com/#organization"
-			},
-			"affiliation": {
-				"@id": "https://www.univalle.edu.co/#organization"
-			},
-			"knowsLanguage": [
-				{
-					"@type": "Language",
-					"name": "Spanish",
-					"alternateName": "es"
-				},
-				{
-					"@type": "Language",
-					"name": "English",
-					"alternateName": "en"
-				}
-			],
-			"knowsAbout": [
-				"Software Engineering",
-				"Full Stack Web Development",
-				"Frontend Development",
-				"Backend Development",
-				"JavaScript",
-				"TypeScript",
-				"React",
-				"Next.js",
-				"Vue.js",
-				"Astro",
-				"Node.js",
-				"NestJS",
-				"Prisma",
-				"PostgreSQL",
-				"Tailwind CSS",
-				"Web Performance",
-				"Core Web Vitals",
-				"Technical SEO",
-				"Local SEO",
-				"GEO (Generative Engine Optimization)",
-				"AEO (Answer Engine Optimization)",
-				"AI-assisted Software Development",
-				"LLM Integrations",
-				"CI/CD"
-			],
+			"description": "Juan Esteban Camargo is a Colombia-based Software Engineer and Full Stack Developer with 3+ years of experience building scalable web platforms.",
+			"jobTitle": "Software Engineer",
 			"sameAs": [
 				"https://github.com/Juanescacha/",
 				"https://www.linkedin.com/in/juanescacha/",
 				"https://leetcode.com/u/Juanescacha/",
-				"https://www.gitlab.com/juanescacha"
-			],
-			"hasCredential": [
-				{
-					"@id": "https://juanescacha.dev/#credential-full-stack-open"
-				},
-				{
-					"@id": "https://juanescacha.dev/#credential-graphql"
-				},
-				{
-					"@id": "https://juanescacha.dev/#credential-typescript"
-				},
-				{
-					"@id": "https://juanescacha.dev/#credential-scrum"
-				},
-				{
-					"@id": "https://juanescacha.dev/#credential-english-c2"
-				}
-			],
-			"subjectOf": {
-				"@type": "DigitalDocument",
-				"name": "Juan Camargo Resume",
-				"url": "https://juanescacha.dev/Juan_Camargo_Resume.pdf",
-				"encodingFormat": "application/pdf"
-			}
-		},
-		{
-			"@type": "Organization",
-			"@id": "https://lulosimpulsodigital.com/#organization",
-			"name": "Lulos Impulso Digital",
-			"url": "https://lulosimpulsodigital.com/",
-			"description": "Digital growth agency specializing in web development, SEO, GEO, AEO, and AI-powered digital solutions.",
-			"founder": {
-				"@id": "https://juanescacha.dev/#person"
-			}
-		},
-		{
-			"@type": "CollegeOrUniversity",
-			"@id": "https://www.univalle.edu.co/#organization",
-			"name": "Universidad del Valle",
-			"url": "https://www.univalle.edu.co/"
-		},
-		{
-			"@type": "CollegeOrUniversity",
-			"@id": "https://www.helsinki.fi/en#organization",
-			"name": "University of Helsinki",
-			"url": "https://www.helsinki.fi/en"
-		},
-		{
-			"@type": "Organization",
-			"@id": "https://certiprof.com/#organization",
-			"name": "CertiProf",
-			"url": "https://certiprof.com/"
-		},
-		{
-			"@type": "Organization",
-			"@id": "https://www.ef.com/#organization",
-			"name": "EF Education First",
-			"url": "https://www.ef.com/"
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"@id": "https://juanescacha.dev/#credential-full-stack-open",
-			"name": "Full Stack Open",
-			"credentialCategory": "Certificate",
-			"url": "https://juanescacha.dev/certificate-fullstack.png",
-			"recognizedBy": {
-				"@id": "https://www.helsinki.fi/en#organization"
-			}
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"@id": "https://juanescacha.dev/#credential-graphql",
-			"name": "GraphQL",
-			"credentialCategory": "Certificate",
-			"url": "https://juanescacha.dev/certificate-graphql.png",
-			"recognizedBy": {
-				"@id": "https://www.helsinki.fi/en#organization"
-			}
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"@id": "https://juanescacha.dev/#credential-typescript",
-			"name": "TypeScript",
-			"credentialCategory": "Certificate",
-			"url": "https://juanescacha.dev/certificate-typescript.png",
-			"recognizedBy": {
-				"@id": "https://www.helsinki.fi/en#organization"
-			}
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"@id": "https://juanescacha.dev/#credential-scrum",
-			"name": "Scrum Foundation Professional Certificate",
-			"credentialCategory": "Professional Certificate",
-			"url": "https://juanescacha.dev/certificate-scrum.png",
-			"recognizedBy": {
-				"@id": "https://certiprof.com/#organization"
-			}
-		},
-		{
-			"@type": "EducationalOccupationalCredential",
-			"@id": "https://juanescacha.dev/#credential-english-c2",
-			"name": "EF Standard English Test: C2 Proficiency",
-			"credentialCategory": "Language Proficiency Certificate",
-			"url": "https://juanescacha.dev/certificate-english.png",
-			"recognizedBy": {
-				"@id": "https://www.ef.com/#organization"
-			}
+				"https://www.gitlab.com/juanescacha/"
+			]
 		}
 	]
 }
