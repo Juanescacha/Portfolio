@@ -14,7 +14,7 @@ The site presents my professional background, work experience, selected projects
 
 This repository contains the source code for my current professional portfolio.
 
-The project is built as a **static Astro site** with English as the default language and a Spanish version under `/es/`. Content is separated from presentation through typed data files, making professional information such as experience, projects, certifications, articles, and social profiles easier to maintain.
+The project is built as a **static Astro site** with English as the default language and a Spanish version under [juanescacha.dev/es/](https://juanescacha.dev/es/). Content is separated from presentation through typed data files, making professional information such as experience, projects, certifications, articles, and social profiles easier to maintain.
 
 Beyond presenting my work, the site is also designed around modern web quality practices: performance, accessibility, internationalization, semantic HTML, structured data, technical SEO, and machine-readable content for search engines and AI systems.
 
