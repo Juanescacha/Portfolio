@@ -11,7 +11,7 @@ const languageEntries = Object.entries(languages)
 	{languageEntries.map(([locale, language], index) => (
 			<>
 				<a
-						href={locale === 'en' ? "/" : `/${locale}`}
+						href={locale === 'en' ? "https://juanescacha.dev/" : `https://juanescacha.dev/es/`}
 						aria-current={Astro.currentLocale === locale ? "page" : undefined}
 						hreflang={locale}
 						class={`${
